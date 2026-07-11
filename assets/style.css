@@ -74,13 +74,13 @@ img { max-width: 100%; display: block; }
 .nav-links a { text-decoration: none; color: var(--muted); transition: color .15s; }
 .nav-links a:hover, .nav-links a.active { color: var(--paper); }
 
-/* language toggle (site UI text) */
+/* language toggle (site UI text) — now labeled English Medium / हिंदी माध्यम */
 .lang-toggle {
   display: flex;
-  border: 1px solid var(--border);
+  border: 1px solid var(--teal);
   border-radius: var(--radius);
   overflow: hidden;
-  font-family: var(--font-mono);
+  font-family: var(--font-body);
   font-size: 12px;
 }
 .lang-toggle button {
@@ -90,30 +90,10 @@ img { max-width: 100%; display: block; }
   padding: 6px 12px;
   cursor: pointer;
   font-family: inherit;
+  white-space: nowrap;
   font-size: inherit;
 }
 .lang-toggle button.active { background: var(--marigold); color: var(--ink); font-weight: 600; }
-
-/* medium toggle (video content: English Medium / Hindi Medium) */
-.medium-toggle {
-  display: flex;
-  border: 1px solid var(--teal);
-  border-radius: var(--radius);
-  overflow: hidden;
-  font-family: var(--font-body);
-  font-size: 12px;
-}
-.medium-toggle button {
-  background: transparent;
-  border: none;
-  color: var(--muted);
-  padding: 6px 12px;
-  cursor: pointer;
-  font-family: inherit;
-  font-size: 12px;
-  white-space: nowrap;
-}
-.medium-toggle button.active { background: var(--teal); color: var(--ink); font-weight: 600; }
 
 /* subject switcher */
 .subject-links { display: flex; gap: 4px; font-size: 14px; }
@@ -126,9 +106,9 @@ img { max-width: 100%; display: block; }
 .subject-links a:hover { color: var(--paper); }
 .subject-links a.active { color: var(--ink); background: var(--marigold); font-weight: 600; }
 
-/* show/hide video by selected medium */
-body[data-medium="en"] [data-video-lang="hi"] { display: none; }
-body[data-medium="hi"] [data-video-lang="en"] { display: none; }
+/* show/hide video by selected language */
+body[data-lang="en"] [data-video-lang="hi"] { display: none; }
+body[data-lang="hi"] [data-video-lang="en"] { display: none; }
 
 /* ---------- hero ---------- */
 .hero {
