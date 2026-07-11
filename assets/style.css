@@ -57,7 +57,7 @@ img { max-width: 100%; display: block; }
   backdrop-filter: blur(6px);
   z-index: 10;
 }
-.topbar .wrap { display: flex; align-items: center; justify-content: space-between; }
+.topbar .wrap { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
 .brand {
   font-family: var(--font-mono);
   font-size: 14px;
@@ -70,11 +70,11 @@ img { max-width: 100%; display: block; }
   gap: 8px;
 }
 .brand .dot { color: var(--marigold); }
-.nav-links { display: flex; gap: 28px; font-size: 14px; align-items: center; }
+.nav-links { display: flex; gap: 18px; font-size: 14px; align-items: center; flex-wrap: wrap; }
 .nav-links a { text-decoration: none; color: var(--muted); transition: color .15s; }
 .nav-links a:hover, .nav-links a.active { color: var(--paper); }
 
-/* language toggle */
+/* language toggle (site UI text) */
 .lang-toggle {
   display: flex;
   border: 1px solid var(--border);
@@ -94,9 +94,41 @@ img { max-width: 100%; display: block; }
 }
 .lang-toggle button.active { background: var(--marigold); color: var(--ink); font-weight: 600; }
 
-/* show/hide video by selected language */
-body[data-lang="en"] [data-video-lang="hi"] { display: none; }
-body[data-lang="hi"] [data-video-lang="en"] { display: none; }
+/* medium toggle (video content: English Medium / Hindi Medium) */
+.medium-toggle {
+  display: flex;
+  border: 1px solid var(--teal);
+  border-radius: var(--radius);
+  overflow: hidden;
+  font-family: var(--font-body);
+  font-size: 12px;
+}
+.medium-toggle button {
+  background: transparent;
+  border: none;
+  color: var(--muted);
+  padding: 6px 12px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 12px;
+  white-space: nowrap;
+}
+.medium-toggle button.active { background: var(--teal); color: var(--ink); font-weight: 600; }
+
+/* subject switcher */
+.subject-links { display: flex; gap: 4px; font-size: 14px; }
+.subject-links a {
+  text-decoration: none;
+  color: var(--muted);
+  padding: 6px 10px;
+  border-radius: var(--radius);
+}
+.subject-links a:hover { color: var(--paper); }
+.subject-links a.active { color: var(--ink); background: var(--marigold); font-weight: 600; }
+
+/* show/hide video by selected medium */
+body[data-medium="en"] [data-video-lang="hi"] { display: none; }
+body[data-medium="hi"] [data-video-lang="en"] { display: none; }
 
 /* ---------- hero ---------- */
 .hero {
