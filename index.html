@@ -21,19 +21,27 @@
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
 -->
 </head>
-<body data-lang="en">
+<body data-lang="en" data-medium="en">
 
 <div class="topbar">
   <div class="wrap">
     <a href="index.html" class="brand">Rhymewood<span class="dot">•</span>Study</a>
     <nav class="nav-links">
-      <a href="index.html" class="active">Physics</a>
+      <div class="subject-links">
+        <a href="index.html" class="active">Physics</a>
+        <a href="chemistry.html">Chemistry</a>
+        <a href="biology.html">Biology</a>
+      </div>
       <a href="papers.html">Papers</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
       <div class="lang-toggle">
         <button data-lang="en" onclick="setLang('en')">EN</button>
         <button data-lang="hi" onclick="setLang('hi')">हिं</button>
+      </div>
+      <div class="medium-toggle">
+        <button data-medium="en" onclick="setMedium('en')">English Medium</button>
+        <button data-medium="hi" onclick="setMedium('hi')">हिंदी माध्यम</button>
       </div>
     </nav>
   </div>
@@ -256,10 +264,19 @@ function setLang(lang) {
   });
   try { localStorage.setItem('site-lang', lang); } catch (e) {}
 }
+function setMedium(medium) {
+  document.body.setAttribute('data-medium', medium);
+  document.querySelectorAll('.medium-toggle button').forEach(function(b) {
+    b.classList.toggle('active', b.dataset.medium === medium);
+  });
+  try { localStorage.setItem('site-medium', medium); } catch (e) {}
+}
 (function() {
-  var saved = 'en';
-  try { saved = localStorage.getItem('site-lang') || 'en'; } catch (e) {}
-  setLang(saved);
+  var savedLang = 'en', savedMedium = 'en';
+  try { savedLang = localStorage.getItem('site-lang') || 'en'; } catch (e) {}
+  try { savedMedium = localStorage.getItem('site-medium') || 'en'; } catch (e) {}
+  setLang(savedLang);
+  setMedium(savedMedium);
 })();
 </script>
 

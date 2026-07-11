@@ -47,8 +47,17 @@ Open `index.html` in a browser right now to see it live — no build step needed
 4. Site goes live at `https://yourusername.github.io/up-board-physics/`
 5. Optional: buy a domain and point it at GitHub Pages via a CNAME file (ask if you want the exact steps when you're ready)
 
+## Chemistry, Biology & the Medium toggle
+- **`chemistry.html`** and **`biology.html`** are now live, same template as Physics — subject switcher (Physics / Chemistry / Biology) sits in the nav on every page.
+  - Chemistry: 10 units grouped into Physical / Inorganic / Organic Chemistry — matches how the syllabus is actually taught, not an arbitrary split.
+  - Biology: 5 units — Reproduction (14), Genetics & Evolution (18, highest), Human Welfare (14), Biotechnology (10), Ecology (14) = 70 marks.
+- **Two separate toggles now, not one:**
+  - **EN / हिं** — controls the site's interface text (headings, labels, buttons)
+  - **English Medium / हिंदी माध्यम** — controls which video plays (independent of interface language, since a student's medium of study doesn't have to match which language they browse the site in)
+  - Both remember the visitor's choice via the browser, no login needed.
+- Same pattern applies going forward: adding Maths later is a copy of one of these files with a new unit list.
+
 ## Bilingual (English + Hindi medium)
-- The site now has an **EN / हिं toggle** in the top nav (`index.html`, `papers.html`). It's built with plain JS + `localStorage`, no framework needed.
 - Every unit card has **two hidden video slots** (`data-video-lang="en"` and `data-video-lang="hi"`) — only paste in the `VIDEO_ID` for the language you've actually uploaded; leave the other as the placeholder until that version exists.
 - Card titles and topic lists already have Hindi translations built in (standard NCERT terminology) — you don't need to translate those yourself, just the video content.
 - Recording order suggestion: finish EN or HI fully for one unit at a time rather than all-EN-then-all-HI — gives you a complete, shippable unit sooner.
