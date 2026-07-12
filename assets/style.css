@@ -259,12 +259,13 @@ body[data-lang="hi"] [data-video-lang="en"] { display: none; }
 .unit-card .topics {
   font-size: 13px;
   color: #4b5563;
-  margin: 0 0 14px;
+  margin: 0 0 12px;
   flex: 1;
   display: -webkit-box;
-  -webkit-line-clamp: 4;
+  -webkit-line-clamp: 3; /* Max 3 lines for consistency */
   -webkit-box-orient: vertical;
   overflow: hidden;
+  line-height: 1.4;
 }
 .unit-card .meta {
   display: flex;
@@ -275,6 +276,7 @@ body[data-lang="hi"] [data-video-lang="en"] { display: none; }
   color: #6b7280;
   border-top: 1px dashed #d8d2c5;
   padding-top: 10px;
+  margin-top: auto; /* Pushes meta to the bottom */
 }
 .unit-card .meta .weight { color: var(--marigold); font-weight: 600; }
 .unit-card.high-yield .weight::after { content: " · high-yield"; color: #b8811f; }
