@@ -4,30 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Download Notes • UP Board</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css">
-  <style>
-    .download-btn {
-      display: block;
-      width: 100%;
-      text-align: center;
-      padding: 16px 24px;
-      font-size: 16px;
-      font-weight: 600;
-      margin-bottom: 12px;
-      border-radius: var(--radius);
-      text-decoration: none;
-      transition: all 0.2s ease;
-    }
-    .download-btn.en { background: var(--marigold); color: var(--ink); }
-    .download-btn.hi { background: var(--teal); color: white; }
-    .download-btn:hover { filter: brightness(0.92); transform: translateY(-1px); }
-  </style>
 </head>
 <body>
   <div class="topbar">
-    <div class="wrap" style="display:flex; align-items:center; justify-content:space-between; padding:18px 0;">
-      <a href="index.html" class="brand">UPBoard•Exam <span class="dot">•</span></a>
-      <a href="physics.html" style="color:var(--muted); text-decoration:none; font-size:14px;">← Back to Physics</a>
+    <div class="wrap" style="display:flex; align-items:center; justify-content:space-between; padding:14px 0;">
+      <a href="index.html" class="brand">UPBoard<span class="dot">•</span>Exam</a>
+      <a href="physics.html" style="color:#B7BEC9; text-decoration:none; font-size:14px;">← Back to Physics</a>
     </div>
   </div>
 
@@ -35,7 +21,7 @@
     
     <div style="text-align:center; margin-bottom: 40px;">
       <div style="font-size: 56px; margin-bottom: 12px;">🎉</div>
-      <h1 style="font-family: var(--font-display); font-size: 34px; margin-bottom: 8px; color: var(--paper);">
+      <h1 style="font-size: 34px; margin-bottom: 8px; color: var(--navy);">
         Thank you for your purchase!
       </h1>
       <p id="subtitle" style="font-size: 18px; color: var(--muted); max-width: 420px; margin: 0 auto;">
@@ -45,8 +31,8 @@
 
     <div class="paper-item" style="padding: 28px 26px; margin-bottom: 24px;">
       <div style="margin-bottom: 20px;">
-        <div id="unit-label" style="font-family: var(--font-mono); font-size: 13px; color: var(--teal); margin-bottom: 4px;"></div>
-        <h2 id="unit-name" style="font-family: var(--font-display); font-size: 24px; margin: 0 0 8px; color: var(--ink);"></h2>
+        <div id="unit-label" style="font-size: 13px; font-weight: 700; letter-spacing: 0.04em; color: var(--teal-deep); margin-bottom: 4px;"></div>
+        <h2 id="unit-name" style="font-size: 24px; margin: 0 0 8px; color: var(--navy);"></h2>
       </div>
 
       <a id="btn-en" href="#" class="download-btn en" target="_blank" rel="noopener" style="display:none;">
@@ -58,13 +44,13 @@
       </a>
     </div>
 
-    <div style="background: #1B2A41; padding: 18px 20px; border-radius: var(--radius); font-size: 13px; color: #9CA3AF;">
+    <div style="background: var(--navy); padding: 18px 20px; border-radius: var(--radius-sm); font-size: 13px; color: #9CA3AF;">
       These files are for your personal educational use only. Please do not share the links publicly.
     </div>
   </div>
 
-  <footer style="border-top: 1px solid var(--border); padding: 24px 0; font-size: 13px; color: var(--muted);">
-    <div class="wrap" style="text-align:center;">
+  <footer style="padding: 24px 0; font-size: 13px;">
+    <div class="wrap" style="text-align:center; display:block;">
       © 2026 UPBoardExam.com
     </div>
   </footer>
