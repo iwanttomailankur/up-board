@@ -7,12 +7,17 @@
   <meta name="description" content="Concise, exam-focused unit-wise notes PDFs for UP Board Class 12 Physics, Chemistry and Biology. Instant delivery. English & Hindi medium available.">
   <link rel="stylesheet" href="assets/style.css">
   <style>
-    /* Stabilize card heights to prevent jumping on language toggle */
+    /* Make all paper-item cards equal height */
+    .paper-grid {
+      align-items: stretch;
+    }
+
     .paper-item {
-      min-height: 210px;
+      min-height: 265px;
       display: flex;
       flex-direction: column;
     }
+
     .paper-item .desc {
       flex: 1;
       display: -webkit-box;
@@ -20,20 +25,18 @@
       -webkit-box-orient: vertical;
       overflow: hidden;
       font-size: 13px;
-      line-height: 1.4;
+      line-height: 1.45;
     }
+
     .paper-item h3 {
       font-size: 17px;
       margin-bottom: 6px;
+      min-height: 42px;
     }
 
-    /* Reduce nav jumping on language toggle */
+    /* Reduce nav jumping */
     .nav-links a {
       white-space: nowrap;
-    }
-    .nav-links .subject-links a {
-      min-width: 70px;
-      text-align: center;
     }
   </style>
 </head>
