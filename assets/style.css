@@ -255,6 +255,8 @@ body[data-lang="hi"] [data-video-lang="en"] { display: none; }
   font-size: 18px;
   margin: 0 0 6px;
   font-weight: 600;
+  min-height: 44px;           /* Enough space for 2-line titles */
+  line-height: 1.25;
 }
 .unit-card .topics {
   font-size: 13px;
