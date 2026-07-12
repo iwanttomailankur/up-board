@@ -35,9 +35,12 @@
 }
 
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; height: 100%; }
 body {
   margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   background: var(--paper);
   color: var(--ink);
   font-family: var(--font-body);
@@ -491,6 +494,7 @@ body[data-lang="hi"] .thumb iframe[data-video-lang="hi"] { display: block; }
 
 /* ---------- Footer ---------- */
 footer {
+  margin-top: auto;
   background: var(--navy);
   border-top: 1px solid var(--navy-line);
   padding: 22px 0;
