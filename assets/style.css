@@ -57,7 +57,7 @@ img { max-width: 100%; display: block; }
   backdrop-filter: blur(6px);
   z-index: 10;
 }
-.topbar .wrap { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+.topbar .wrap { display: flex; align-items: center; justify-content: space-between; flex-wrap: nowrap; gap: 12px; }
 .brand {
   font-family: var(--font-mono);
   font-size: 14px;
@@ -66,12 +66,26 @@ img { max-width: 100%; display: block; }
   text-decoration: none;
   color: var(--paper);
   display: flex;
+  flex-shrink: 0;
   align-items: baseline;
   gap: 8px;
 }
 .brand .dot { color: var(--marigold); }
-.nav-links { display: flex; gap: 18px; font-size: 14px; align-items: center; flex-wrap: wrap; }
-.nav-links a { text-decoration: none; color: var(--muted); transition: color .15s; }
+.nav-links {
+  display: flex;
+  gap: 18px;
+  font-size: 14px;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.nav-links::-webkit-scrollbar { display: none; }
+.nav-links a { text-decoration: none; color: var(--muted); transition: color .15s; flex-shrink: 0; white-space: nowrap; }
 .nav-links a:hover, .nav-links a.active { color: var(--paper); }
 
 /* language toggle (site UI text) — now labeled English Medium / हिंदी माध्यम */
@@ -82,6 +96,7 @@ img { max-width: 100%; display: block; }
   overflow: hidden;
   font-family: var(--font-body);
   font-size: 12px;
+  flex-shrink: 0;
 }
 .lang-toggle button {
   background: transparent;
@@ -96,7 +111,7 @@ img { max-width: 100%; display: block; }
 .lang-toggle button.active { background: var(--marigold); color: var(--ink); font-weight: 600; }
 
 /* subject switcher */
-.subject-links { display: flex; gap: 4px; font-size: 14px; }
+.subject-links { display: flex; gap: 4px; font-size: 14px; flex-shrink: 0; white-space: nowrap; }
 .subject-links a {
   text-decoration: none;
   color: var(--muted);
