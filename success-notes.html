@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Download Notes • UP Board</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <style>
+    .download-btn {
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding: 16px 24px;
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      border-radius: var(--radius);
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+    .download-btn.en { background: var(--marigold); color: var(--ink); }
+    .download-btn.hi { background: var(--teal); color: white; }
+    .download-btn:hover { filter: brightness(0.92); transform: translateY(-1px); }
+    
+    .success-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Topbar -->
+  <div class="topbar">
+    <div class="wrap" style="display:flex; align-items:center; justify-content:space-between; padding:18px 0;">
+      <a href="index.html" class="brand">UPBoard•Exam <span class="dot">•</span></a>
+      <a href="physics.html" style="color:var(--muted); text-decoration:none; font-size:14px;">← Back to Physics</a>
+    </div>
+  </div>
+
+  <div class="wrap" style="max-width: 680px; padding: 60px 20px 80px;">
+    
+    <!-- Dynamic Header -->
+    <div class="success-header">
+      <div style="font-size: 56px; margin-bottom: 12px;">🎉</div>
+      <h1 id="thank-you-title" style="font-family: var(--font-display); font-size: 34px; margin-bottom: 8px; color: var(--paper);">
+        Thank you for your purchase!
+      </h1>
+      <p id="unit-subtitle" style="font-size: 18px; color: var(--muted); max-width: 420px; margin: 0 auto;">
+        Your notes are ready for instant download.
+      </p>
+    </div>
+
+    <!-- Download Card -->
+    <div class="paper-item" style="padding: 28px 26px; margin-bottom: 24px;">
+      <div style="margin-bottom: 20px;">
+        <div id="unit-label" style="font-family: var(--font-mono); font-size: 13px; color: var(--teal); margin-bottom: 4px;"></div>
+        <h2 id="unit-name" style="font-family: var(--font-display); font-size: 24px; margin: 0 0 8px; color: var(--ink);"></h2>
+        <p style="color: #4b5563; margin: 0; font-size: 15px;">Complete notes • All syllabus points • Formulas &amp; exam tips</p>
+      </div>
+
+      <div style="margin-top: 24px;">
+        <!-- English Button -->
+        <a id="btn-en" href="#" class="download-btn en" target="_blank" rel="noopener">
+          📥 Download English Medium Notes (PDF)
+        </a>
+
+        <!-- Hindi Button -->
+        <a id="btn-hi" href="#" class="download-btn hi" target="_blank" rel="noopener">
+          📥 हिंदी माध्यम नोट्स डाउनलोड करें (PDF)
+        </a>
+      </div>
+    </div>
+
+    <div style="background: #1B2A41; padding: 18px 20px; border-radius: var(--radius); font-size: 13px; color: #9CA3AF; line-height: 1.6;">
+      <strong style="color: var(--paper);">Note:</strong> These files are for your personal educational use only. 
+      Please do not share the download links publicly.
+    </div>
+
+    <p style="text-align: center; margin-top: 32px; font-size: 13px; color: var(--muted);">
+      A confirmation email with these links has also been sent to you.
+    </p>
+  </div>
+
+  <footer style="border-top: 1px solid var(--border); padding: 24px 0; font-size: 13px; color: var(--muted);">
+    <div class="wrap" style="text-align:center;">
+      © 2026 UPBoardExam.com · UP Board Class 12 Physics, Chemistry &amp; Biology
+    </div>
+  </footer>
+
+  <script>
+    // Read URL parameters
+    function getParam(name) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(name);
+    }
+
+    // Populate the page dynamically
+    function initSuccessPage() {
+      const unit = getParam('unit') || '1';
+      const title = getParam('title') || 'Notes';
+      const enId = getParam('en');
+      const hiId = getParam('hi');
+
+      // Update page title
+      document.title = `Download ${title} Notes • UP Board`;
+
+      // Update header content
+      document.getElementById('unit-label').textContent = `PHYSICS • UNIT ${unit}`;
+      document.getElementById('unit-name').textContent = title;
+      document.getElementById('unit-subtitle').textContent = 
+        `Your ${title} notes (English + Hindi) are ready for instant download.`;
+
+      // Set download buttons
+      const btnEn = document.getElementById('btn-en');
+      const btnHi = document.getElementById('btn-hi');
+
+      if (enId) {
+        btnEn.href = `https://drive.google.com/uc?export=download&id=${enId}`;
+      } else {
+        btnEn.style.display = 'none';
+      }
+
+      if (hiId) {
+        btnHi.href = `https://drive.google.com/uc?export=download&id=${hiId}`;
+      } else {
+        btnHi.style.display = 'none';
+      }
+
+      // Fallback message if no links provided
+      if (!enId && !hiId) {
+        document.querySelector('.paper-item').innerHTML = `
+          <p style="color:#ef4444; text-align:center; padding:20px 0;">
+            Download links not found. Please contact support.
+          </p>
+        `;
+      }
+    }
+
+    // Initialize when page loads
+    window.onload = initSuccessPage;
+  </script>
+</body>
+</html>
