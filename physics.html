@@ -5,6 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>UP Board Class 12 Physics | Unit-wise Videos & Notes</title>
   <link rel="stylesheet" href="assets/style.css">
+  <style>
+    /* Small buttons at top right of card */
+    .card-actions {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      display: flex;
+      gap: 6px;
+      z-index: 3;
+    }
+    .card-actions .btn-small {
+      font-size: 11px;
+      padding: 4px 9px;
+      border-radius: 3px;
+      text-decoration: none;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    .card-actions .btn-notes {
+      background: var(--marigold);
+      color: var(--ink);
+    }
+    .card-actions .btn-papers {
+      background: var(--teal);
+      color: white;
+    }
+  </style>
 </head>
 <body data-lang="en">
 
@@ -33,7 +60,7 @@
     <div class="wrap">
       <p class="hero-eyebrow">UPMSP · Class 12 · 2027 Board Exam</p>
       <h1>Physics — mapped straight to your exam paper.</h1>
-      <p class="lead">Nine units, two sections, one syllabus — available in English and Hindi medium.</p>
+      <p class="lead">Nine units, two sections, one syllabus — available in English and Hindi medium. Each video follows the official UP Board weightage.</p>
 
       <div class="hero-stats">
         <div><span class="num">9</span><span class="label">Units Covered</span></div>
@@ -60,23 +87,28 @@
         <!-- Unit 1 -->
         <div class="unit-card">
           <span class="unit-index">Unit 1</span>
+          
+          <!-- Small buttons at top right -->
+          <div class="card-actions">
+            <a class="btn-small btn-notes buy-note-btn"
+               data-en-link="https://pages.razorpay.com/REPLACE_WITH_UNIT1_ENGLISH"
+               data-hi-link="https://pages.razorpay.com/REPLACE_WITH_UNIT1_HINDI"
+               href="#" target="_blank">Notes</a>
+            <a class="btn-small btn-papers buy-papers-btn"
+               data-en-link="papers.html" data-hi-link="papers.html"
+               href="papers.html">Papers</a>
+          </div>
+
+          <div class="thumb">
+            <!-- YouTube video will go here later -->
+            <div class="placeholder">Video coming soon</div>
+          </div>
+
           <div class="body">
             <h3 class="i18n" data-en="Electrostatics" data-hi="वैद्युत स्थैतिकी">Electrostatics</h3>
             <p class="topics i18n" data-en="Electric charges, fields, dipole, potential, capacitance." data-hi="विद्युत आवेश, क्षेत्र, द्विध्रुव, विभव, संधारित्र।">Electric charges, fields, dipole, potential, capacitance.</p>
-            
-            <!-- Language-aware Buttons -->
-            <div style="margin-top: 12px; padding-top: 12px; border-top: 1px dashed #d8d2c5; display:flex; flex-direction:column; gap:8px;">
-              <a class="buy-btn buy-note-btn"
-                 data-en-link="https://pages.razorpay.com/REPLACE_WITH_UNIT1_ENGLISH"
-                 data-hi-link="https://pages.razorpay.com/REPLACE_WITH_UNIT1_HINDI"
-                 href="#" target="_blank" rel="noopener" style="padding:9px 14px; font-size:13px; text-align:center;">
-                <span class="i18n" data-en="📥 Buy Notes" data-hi="📥 नोट्स खरीदें">📥 Buy Notes</span>
-              </a>
-              <a class="buy-btn buy-papers-btn"
-                 data-en-link="papers.html" data-hi-link="papers.html"
-                 href="papers.html" style="padding:9px 14px; font-size:13px; text-align:center; background:var(--teal);">
-                <span class="i18n" data-en="📘 Solved Papers" data-hi="📘 हल प्रश्नपत्र">📘 Solved Papers</span>
-              </a>
+            <div class="meta">
+              <span class="weight">Part A • Core unit</span>
             </div>
           </div>
         </div>
@@ -84,75 +116,60 @@
         <!-- Unit 2 -->
         <div class="unit-card">
           <span class="unit-index">Unit 2</span>
+          <div class="card-actions">
+            <a class="btn-small btn-notes buy-note-btn" data-en-link="https://pages.razorpay.com/REPLACE_WITH_UNIT2_ENGLISH" data-hi-link="https://pages.razorpay.com/REPLACE_WITH_UNIT2_HINDI" href="#" target="_blank">Notes</a>
+            <a class="btn-small btn-papers buy-papers-btn" data-en-link="papers.html" data-hi-link="papers.html" href="papers.html">Papers</a>
+          </div>
+          <div class="thumb"><div class="placeholder">Video coming soon</div></div>
           <div class="body">
             <h3 class="i18n" data-en="Current Electricity" data-hi="विद्युत धारा">Current Electricity</h3>
             <p class="topics i18n" data-en="Ohm's law, resistivity, cells, Wheatstone bridge, potentiometer." data-hi="ओम का नियम, प्रतिरोधकता, सेल, व्हीटस्टोन ब्रिज, पोटेंशियोमीटर।">Ohm's law, resistivity, cells, Wheatstone bridge, potentiometer.</p>
-            
-            <div style="margin-top: 12px; padding-top: 12px; border-top: 1px dashed #d8d2c5; display:flex; flex-direction:column; gap:8px;">
-              <a class="buy-btn buy-note-btn"
-                 data-en-link="https://pages.razorpay.com/REPLACE_WITH_UNIT2_ENGLISH"
-                 data-hi-link="https://pages.razorpay.com/REPLACE_WITH_UNIT2_HINDI"
-                 href="#" target="_blank" rel="noopener" style="padding:9px 14px; font-size:13px; text-align:center;">
-                <span class="i18n" data-en="📥 Buy Notes" data-hi="📥 नोट्स खरीदें">📥 Buy Notes</span>
-              </a>
-              <a class="buy-btn buy-papers-btn" data-en-link="papers.html" data-hi-link="papers.html" href="papers.html" style="padding:9px 14px; font-size:13px; text-align:center; background:var(--teal);">
-                <span class="i18n" data-en="📘 Solved Papers" data-hi="📘 हल प्रश्नपत्र">📘 Solved Papers</span>
-              </a>
-            </div>
+            <div class="meta"><span class="weight">Part A • Core unit</span></div>
           </div>
         </div>
 
         <!-- Unit 3 -->
         <div class="unit-card">
           <span class="unit-index">Unit 3</span>
+          <div class="card-actions">
+            <a class="btn-small btn-notes buy-note-btn" data-en-link="https://pages.razorpay.com/REPLACE_WITH_UNIT3_ENGLISH" data-hi-link="https://pages.razorpay.com/REPLACE_WITH_UNIT3_HINDI" href="#" target="_blank">Notes</a>
+            <a class="btn-small btn-papers buy-papers-btn" data-en-link="papers.html" data-hi-link="papers.html" href="papers.html">Papers</a>
+          </div>
+          <div class="thumb"><div class="placeholder">Video coming soon</div></div>
           <div class="body">
             <h3 class="i18n" data-en="Magnetic Effects of Current & Magnetism" data-hi="धारा के चुंबकीय प्रभाव तथा चुंबकत्व">Magnetic Effects of Current & Magnetism</h3>
             <p class="topics i18n" data-en="Biot-Savart law, Ampere's law, solenoids, electromagnets, permanent magnets." data-hi="बायो-सावर्ट नियम, एम्पीयर नियम, परिनालिका, विद्युत चुंबक, स्थायी चुंबक।">Biot-Savart law, Ampere's law, solenoids, electromagnets, permanent magnets.</p>
-            
-            <div style="margin-top: 12px; padding-top: 12px; border-top: 1px dashed #d8d2c5; display:flex; flex-direction:column; gap:8px;">
-              <a class="buy-btn buy-note-btn" data-en-link="https://pages.razorpay.com/REPLACE_WITH_UNIT3_ENGLISH" data-hi-link="https://pages.razorpay.com/REPLACE_WITH_UNIT3_HINDI" href="#" target="_blank" rel="noopener" style="padding:9px 14px; font-size:13px; text-align:center;">
-                <span class="i18n" data-en="📥 Buy Notes" data-hi="📥 नोट्स खरीदें">📥 Buy Notes</span>
-              </a>
-              <a class="buy-btn buy-papers-btn" data-en-link="papers.html" data-hi-link="papers.html" href="papers.html" style="padding:9px 14px; font-size:13px; text-align:center; background:var(--teal);">
-                <span class="i18n" data-en="📘 Solved Papers" data-hi="📘 हल प्रश्नपत्र">📘 Solved Papers</span>
-              </a>
-            </div>
+            <div class="meta"><span class="weight">Part A • Core unit</span></div>
           </div>
         </div>
 
         <!-- Unit 4 -->
         <div class="unit-card">
           <span class="unit-index">Unit 4</span>
+          <div class="card-actions">
+            <a class="btn-small btn-notes buy-note-btn" data-en-link="https://pages.razorpay.com/REPLACE_WITH_UNIT4_ENGLISH" data-hi-link="https://pages.razorpay.com/REPLACE_WITH_UNIT4_HINDI" href="#" target="_blank">Notes</a>
+            <a class="btn-small btn-papers buy-papers-btn" data-en-link="papers.html" data-hi-link="papers.html" href="papers.html">Papers</a>
+          </div>
+          <div class="thumb"><div class="placeholder">Video coming soon</div></div>
           <div class="body">
             <h3 class="i18n" data-en="Electromagnetic Induction & Alternating Currents" data-hi="वैद्युतचुंबकीय प्रेरण तथा प्रत्यावर्ती धारा">Electromagnetic Induction & Alternating Currents</h3>
             <p class="topics i18n" data-en="Faraday's laws, Lenz's law, self & mutual inductance, transformers." data-hi="फैराडे नियम, लेंज नियम, स्व तथा अन्योन्य प्रेरण, ट्रांसफार्मर।">Faraday's laws, Lenz's law, self & mutual inductance, transformers.</p>
-            
-            <div style="margin-top: 12px; padding-top: 12px; border-top: 1px dashed #d8d2c5; display:flex; flex-direction:column; gap:8px;">
-              <a class="buy-btn buy-note-btn" data-en-link="https://pages.razorpay.com/REPLACE_WITH_UNIT4_ENGLISH" data-hi-link="https://pages.razorpay.com/REPLACE_WITH_UNIT4_HINDI" href="#" target="_blank" rel="noopener" style="padding:9px 14px; font-size:13px; text-align:center;">
-                <span class="i18n" data-en="📥 Buy Notes" data-hi="📥 नोट्स खरीदें">📥 Buy Notes</span>
-              </a>
-              <a class="buy-btn buy-papers-btn" data-en-link="papers.html" data-hi-link="papers.html" href="papers.html" style="padding:9px 14px; font-size:13px; text-align:center; background:var(--teal);">
-                <span class="i18n" data-en="📘 Solved Papers" data-hi="📘 हल प्रश्नपत्र">📘 Solved Papers</span>
-              </a>
-            </div>
+            <div class="meta"><span class="weight">Part A • Core unit</span></div>
           </div>
         </div>
 
         <!-- Unit 5 -->
         <div class="unit-card">
           <span class="unit-index">Unit 5</span>
+          <div class="card-actions">
+            <a class="btn-small btn-notes buy-note-btn" data-en-link="https://pages.razorpay.com/REPLACE_WITH_UNIT5_ENGLISH" data-hi-link="https://pages.razorpay.com/REPLACE_WITH_UNIT5_HINDI" href="#" target="_blank">Notes</a>
+            <a class="btn-small btn-papers buy-papers-btn" data-en-link="papers.html" data-hi-link="papers.html" href="papers.html">Papers</a>
+          </div>
+          <div class="thumb"><div class="placeholder">Video coming soon</div></div>
           <div class="body">
             <h3 class="i18n" data-en="Electromagnetic Waves" data-hi="वैद्युतचुंबकीय तरंगें">Electromagnetic Waves</h3>
-            <p class="topics i18n" data-en="Displacement current, characteristics of EM waves, electromagnetic spectrum." data-hi="विस्थापन धारा, विद्युत चुंबकीय तरंगों की विशेषताएँ, विद्युत चुंबकीय स्पेक्ट्रम।">Displacement current, characteristics of EM waves, electromagnetic spectrum.</p>
-            
-            <div style="margin-top: 12px; padding-top: 12px; border-top: 1px dashed #d8d2c5; display:flex; flex-direction:column; gap:8px;">
-              <a class="buy-btn buy-note-btn" data-en-link="https://pages.razorpay.com/REPLACE_WITH_UNIT5_ENGLISH" data-hi-link="https://pages.razorpay.com/REPLACE_WITH_UNIT5_HINDI" href="#" target="_blank" rel="noopener" style="padding:9px 14px; font-size:13px; text-align:center;">
-                <span class="i18n" data-en="📥 Buy Notes" data-hi="📥 नोट्स खरीदें">📥 Buy Notes</span>
-              </a>
-              <a class="buy-btn buy-papers-btn" data-en-link="papers.html" data-hi-link="papers.html" href="papers.html" style="padding:9px 14px; font-size:13px; text-align:center; background:var(--teal);">
-                <span class="i18n" data-en="📘 Solved Papers" data-hi="📘 हल प्रश्नपत्र">📘 Solved Papers</span>
-              </a>
-            </div>
+            <p class="topics i18n" data-en="Displacement current, characteristics of EM waves, electromagnetic spectrum." data-hi="विस्थापन धारा, विद्युत चुंबकीय तरंगों की विशेषताएँ।">Displacement current, characteristics of EM waves, electromagnetic spectrum.</p>
+            <div class="meta"><span class="weight">Part A • Short unit</span></div>
           </div>
         </div>
 
@@ -171,75 +188,61 @@
 
       <div class="unit-grid">
 
-        <!-- Unit 6 -->
+        <!-- Unit 6 to Unit 9 (same pattern) -->
+
         <div class="unit-card">
           <span class="unit-index">Unit 6</span>
+          <div class="card-actions">
+            <a class="btn-small btn-notes buy-note-btn" data-en-link="https://pages.razorpay.com/REPLACE_WITH_UNIT6_ENGLISH" data-hi-link="https://pages.razorpay.com/REPLACE_WITH_UNIT6_HINDI" href="#" target="_blank">Notes</a>
+            <a class="btn-small btn-papers buy-papers-btn" data-en-link="papers.html" data-hi-link="papers.html" href="papers.html">Papers</a>
+          </div>
+          <div class="thumb"><div class="placeholder">Video coming soon</div></div>
           <div class="body">
             <h3 class="i18n" data-en="Optics" data-hi="प्रकाशिकी">Optics</h3>
             <p class="topics i18n" data-en="Reflection, refraction, lenses, optical instruments, wave optics." data-hi="परावर्तन, अपवर्तन, लेंस, प्रकाशीय उपकरण, तरंग प्रकाशिकी।">Reflection, refraction, lenses, optical instruments, wave optics.</p>
-            
-            <div style="margin-top: 12px; padding-top: 12px; border-top: 1px dashed #d8d2c5; display:flex; flex-direction:column; gap:8px;">
-              <a class="buy-btn buy-note-btn" data-en-link="https://pages.razorpay.com/REPLACE_WITH_UNIT6_ENGLISH" data-hi-link="https://pages.razorpay.com/REPLACE_WITH_UNIT6_HINDI" href="#" target="_blank" rel="noopener" style="padding:9px 14px; font-size:13px; text-align:center;">
-                <span class="i18n" data-en="📥 Buy Notes" data-hi="📥 नोट्स खरीदें">📥 Buy Notes</span>
-              </a>
-              <a class="buy-btn buy-papers-btn" data-en-link="papers.html" data-hi-link="papers.html" href="papers.html" style="padding:9px 14px; font-size:13px; text-align:center; background:var(--teal);">
-                <span class="i18n" data-en="📘 Solved Papers" data-hi="📘 हल प्रश्नपत्र">📘 Solved Papers</span>
-              </a>
-            </div>
+            <div class="meta"><span class="weight">Part B • 13 marks</span></div>
           </div>
         </div>
 
-        <!-- Unit 7 -->
         <div class="unit-card">
           <span class="unit-index">Unit 7</span>
+          <div class="card-actions">
+            <a class="btn-small btn-notes buy-note-btn" data-en-link="https://pages.razorpay.com/REPLACE_WITH_UNIT7_ENGLISH" data-hi-link="https://pages.razorpay.com/REPLACE_WITH_UNIT7_HINDI" href="#" target="_blank">Notes</a>
+            <a class="btn-small btn-papers buy-papers-btn" data-en-link="papers.html" data-hi-link="papers.html" href="papers.html">Papers</a>
+          </div>
+          <div class="thumb"><div class="placeholder">Video coming soon</div></div>
           <div class="body">
             <h3 class="i18n" data-en="Dual Nature of Radiation & Matter" data-hi="विकिरण तथा द्रव्य की द्वैत प्रकृति">Dual Nature of Radiation & Matter</h3>
             <p class="topics i18n" data-en="Photoelectric effect, de Broglie wavelength, matter waves." data-hi="प्रकाश विद्युत प्रभाव, डी ब्रोग्ली तरंगदैर्घ्य, द्रव्य तरंगें।">Photoelectric effect, de Broglie wavelength, matter waves.</p>
-            
-            <div style="margin-top: 12px; padding-top: 12px; border-top: 1px dashed #d8d2c5; display:flex; flex-direction:column; gap:8px;">
-              <a class="buy-btn buy-note-btn" data-en-link="https://pages.razorpay.com/REPLACE_WITH_UNIT7_ENGLISH" data-hi-link="https://pages.razorpay.com/REPLACE_WITH_UNIT7_HINDI" href="#" target="_blank" rel="noopener" style="padding:9px 14px; font-size:13px; text-align:center;">
-                <span class="i18n" data-en="📥 Buy Notes" data-hi="📥 नोट्स खरीदें">📥 Buy Notes</span>
-              </a>
-              <a class="buy-btn buy-papers-btn" data-en-link="papers.html" data-hi-link="papers.html" href="papers.html" style="padding:9px 14px; font-size:13px; text-align:center; background:var(--teal);">
-                <span class="i18n" data-en="📘 Solved Papers" data-hi="📘 हल प्रश्नपत्र">📘 Solved Papers</span>
-              </a>
-            </div>
+            <div class="meta"><span class="weight">Part B • Core unit</span></div>
           </div>
         </div>
 
-        <!-- Unit 8 -->
         <div class="unit-card">
           <span class="unit-index">Unit 8</span>
+          <div class="card-actions">
+            <a class="btn-small btn-notes buy-note-btn" data-en-link="https://pages.razorpay.com/REPLACE_WITH_UNIT8_ENGLISH" data-hi-link="https://pages.razorpay.com/REPLACE_WITH_UNIT8_HINDI" href="#" target="_blank">Notes</a>
+            <a class="btn-small btn-papers buy-papers-btn" data-en-link="papers.html" data-hi-link="papers.html" href="papers.html">Papers</a>
+          </div>
+          <div class="thumb"><div class="placeholder">Video coming soon</div></div>
           <div class="body">
             <h3 class="i18n" data-en="Atoms & Nuclei" data-hi="परमाणु तथा नाभिक">Atoms & Nuclei</h3>
             <p class="topics i18n" data-en="Bohr's model, radioactivity, nuclear composition, binding energy." data-hi="बोर मॉडल, रेडियोएक्टिविटी, नाभिकीय संरचना, बंधन ऊर्जा।">Bohr's model, radioactivity, nuclear composition, binding energy.</p>
-            
-            <div style="margin-top: 12px; padding-top: 12px; border-top: 1px dashed #d8d2c5; display:flex; flex-direction:column; gap:8px;">
-              <a class="buy-btn buy-note-btn" data-en-link="https://pages.razorpay.com/REPLACE_WITH_UNIT8_ENGLISH" data-hi-link="https://pages.razorpay.com/REPLACE_WITH_UNIT8_HINDI" href="#" target="_blank" rel="noopener" style="padding:9px 14px; font-size:13px; text-align:center;">
-                <span class="i18n" data-en="📥 Buy Notes" data-hi="📥 नोट्स खरीदें">📥 Buy Notes</span>
-              </a>
-              <a class="buy-btn buy-papers-btn" data-en-link="papers.html" data-hi-link="papers.html" href="papers.html" style="padding:9px 14px; font-size:13px; text-align:center; background:var(--teal);">
-                <span class="i18n" data-en="📘 Solved Papers" data-hi="📘 हल प्रश्नपत्र">📘 Solved Papers</span>
-              </a>
-            </div>
+            <div class="meta"><span class="weight">Part B • Core unit</span></div>
           </div>
         </div>
 
-        <!-- Unit 9 -->
         <div class="unit-card">
           <span class="unit-index">Unit 9</span>
+          <div class="card-actions">
+            <a class="btn-small btn-notes buy-note-btn" data-en-link="https://pages.razorpay.com/REPLACE_WITH_UNIT9_ENGLISH" data-hi-link="https://pages.razorpay.com/REPLACE_WITH_UNIT9_HINDI" href="#" target="_blank">Notes</a>
+            <a class="btn-small btn-papers buy-papers-btn" data-en-link="papers.html" data-hi-link="papers.html" href="papers.html">Papers</a>
+          </div>
+          <div class="thumb"><div class="placeholder">Video coming soon</div></div>
           <div class="body">
             <h3 class="i18n" data-en="Electronic Devices" data-hi="इलेक्ट्रॉनिक युक्तियाँ">Electronic Devices</h3>
             <p class="topics i18n" data-en="Semiconductors, PN junction, diodes, transistors, logic gates." data-hi="अर्द्धचालक, PN संधि, डायोड, ट्रांजिस्टर, लॉजिक गेट।">Semiconductors, PN junction, diodes, transistors, logic gates.</p>
-            
-            <div style="margin-top: 12px; padding-top: 12px; border-top: 1px dashed #d8d2c5; display:flex; flex-direction:column; gap:8px;">
-              <a class="buy-btn buy-note-btn" data-en-link="https://pages.razorpay.com/REPLACE_WITH_UNIT9_ENGLISH" data-hi-link="https://pages.razorpay.com/REPLACE_WITH_UNIT9_HINDI" href="#" target="_blank" rel="noopener" style="padding:9px 14px; font-size:13px; text-align:center;">
-                <span class="i18n" data-en="📥 Buy Notes" data-hi="📥 नोट्स खरीदें">📥 Buy Notes</span>
-              </a>
-              <a class="buy-btn buy-papers-btn" data-en-link="papers.html" data-hi-link="papers.html" href="papers.html" style="padding:9px 14px; font-size:13px; text-align:center; background:var(--teal);">
-                <span class="i18n" data-en="📘 Solved Papers" data-hi="📘 हल प्रश्नपत्र">📘 Solved Papers</span>
-              </a>
-            </div>
+            <div class="meta"><span class="weight">Part B • Core unit</span></div>
           </div>
         </div>
 
@@ -254,7 +257,6 @@
     </div>
   </footer>
 
-  <!-- Language + Button Script -->
   <script>
     function setLang(lang) {
       document.body.setAttribute('data-lang', lang);
