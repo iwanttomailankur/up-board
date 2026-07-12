@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Previous Year Solved Papers — UP Board Class 12</title>
-<meta name="description" content="Fully worked UP Board Class 12 Physics, Chemistry, and Biology previous-year solved papers, unit-tagged.">
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,500;0,600;1,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UP Board Class 12 Physics — Unit-Wise Video Notes</title>
+  <meta name="description" content="UP Board Class 12 Physics explained unit by unit in English and Hindi medium, matching the official UPMSP syllabus and marks weightage.">
+  <link rel="stylesheet" href="assets/style.css">
+  <style>
+    /* Small compact buttons like your screenshot */
+    .unit-buttons {
+      display: flex;
+      gap: 8px;
+      margin: 10px 0 6px 0;
+    }
+    .unit-buttons .btn-small {
+      font-size: 12px;
+      padding: 5px 11px;
+      border-radius: 16px;
+      text-decoration: none;
+      font-weight: 600;
+      line-height: 1;
+    }
+    .unit-buttons .btn-papers { background: #2E8B57; color: white; }   /* Teal/Green like screenshot */
+    .unit-buttons .btn-notes { background: #E8A33D; color: #14181F; } /* Marigold like screenshot */
+  </style>
 </head>
 <body data-lang="en">
 
@@ -15,12 +32,12 @@
     <a href="index.html" class="brand">UPBoard<span class="dot">•</span>Exam</a>
     <nav class="nav-links">
       <div class="subject-links">
-        <a href="physics.html" class="i18n" data-en="Physics" data-hi="भौतिकी">Physics</a>
+        <a href="physics.html" class="active i18n" data-en="Physics" data-hi="भौतिकी">Physics</a>
         <a href="chemistry.html" class="i18n" data-en="Chemistry" data-hi="रसायन विज्ञान">Chemistry</a>
         <a href="biology.html" class="i18n" data-en="Biology" data-hi="जीव विज्ञान">Biology</a>
       </div>
       <a href="notes.html" class="i18n" data-en="Buy Notes" data-hi="नोट्स खरीदें">Buy Notes</a>
-      <a href="papers.html" class="active i18n" data-en="Solved Papers" data-hi="हल प्रश्नपत्र">Solved Papers</a>
+      <a href="papers.html" class="i18n" data-en="Solved Papers" data-hi="हल प्रश्नपत्र">Solved Papers</a>
       <div class="lang-toggle">
         <button data-lang="en" onclick="setLang('en')">English Medium</button>
         <button data-lang="hi" onclick="setLang('hi')">हिंदी माध्यम</button>
@@ -29,342 +46,164 @@
   </div>
 </div>
 
-<header class="hero" style="padding-bottom: 32px;">
+<header class="hero">
+  <svg class="circuit-bg" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+    <g stroke="#4FA69C" stroke-width="1.5" fill="none" opacity="0.8">
+      <path d="M20 60 H140 V140 H260"/>
+      <path d="M40 180 H180 V260 H320"/>
+      <path d="M60 320 H200 V40"/>
+      <circle cx="140" cy="60" r="4" fill="#E8A33D" stroke="none"/>
+      <circle cx="260" cy="140" r="4" fill="#E8A33D" stroke="none"/>
+      <circle cx="180" cy="180" r="4" fill="#4FA69C" stroke="none"/>
+      <circle cx="320" cy="260" r="4" fill="#4FA69C" stroke="none"/>
+      <circle cx="200" cy="40" r="4" fill="#E8A33D" stroke="none"/>
+    </g>
+  </svg>
   <div class="wrap">
-    <p class="hero-eyebrow i18n" data-en="UPMSP · Class 12 · 2027 Board Exam" data-hi="यूपीएमएसपी · कक्षा 12 · 2027 बोर्ड परीक्षा">UPMSP · Class 12 · 2027 Board Exam</p>
-    <h1 class="i18n" data-en="Solved Papers — Last 5 years, fully worked solutions." data-hi="हल प्रश्नपत्र — पिछले 5 साल, पूरी तरह हल किए गए समाधान" >Solved Papers — Last 5 years, fully worked solutions.</h1>
-    <p class="lead i18n" data-en="Unit-tagged step-by-step solutions for Physics, Chemistry &amp; Biology previous year papers." data-hi="भौतिकी, रसायन विज्ञान और जीव विज्ञान के पिछले वर्ष के प्रश्नपत्रों के लिए यूनिट-टैग किए गए चरण-दर-चरण हल।">Unit-tagged step-by-step solutions for Physics, Chemistry &amp; Biology previous year papers.</p>
+    <p class="hero-eyebrow">UPMSP · Class 12 · 2027 Board Exam</p>
+    <h1><span class="i18n" data-en="Physics, unit by unit — mapped straight to your exam paper." data-hi="भौतिकी, यूनिट-दर-यूनिट — बिल्कुल आपके प्रश्नपत्र के अनुसार">Physics, unit by unit — mapped straight to your exam paper.</span></h1>
+    <p class="lead i18n" data-en="Nine units, two sections, one syllabus — available in English and Hindi medium. Each video follows the official UP Board weightage." data-hi="नौ यूनिट, दो खंड, एक पाठ्यक्रम — इंग्लिश और हिंदी माध्यम दोनों में उपलब्ध। प्रत्येक वीडियो आधिकारिक यूपी बोर्ड वेटेज के अनुसार बनाया गया है।">Nine units, two sections, one syllabus — available in English and Hindi medium. Each video follows the official UP Board weightage.</p>
 
     <div class="hero-stats">
-      <div>
-        <span class="num i18n" data-en="5" data-hi="5">5</span>
-        <span class="label i18n" data-en="Years covered" data-hi="वर्ष कवर किए गए">Years covered</span>
-      </div>
-      <div>
-        <span class="num i18n" data-en="Solved" data-hi="हल किए गए">Solved</span>
-        <span class="label i18n" data-en="Unit-tagged" data-hi="यूनिट-टैग">Unit-tagged</span>
-      </div>
-      <div>
-        <span class="num i18n" data-en="EN / HI" data-hi="EN / HI">EN / HI</span>
-        <span class="label i18n" data-en="Medium available" data-hi="माध्यम उपलब्ध">Medium available</span>
-      </div>
+      <div><span class="num">9</span><span class="label i18n" data-en="Units covered" data-hi="यूनिट कवर की गईं">Units covered</span></div>
+      <div><span class="num">70 + 30</span><span class="label i18n" data-en="Theory + Practical marks" data-hi="थ्योरी + प्रैक्टिकल अंक">Theory + Practical marks</span></div>
+      <div><span class="num">EN / HI</span><span class="label i18n" data-en="Medium available" data-hi="माध्यम उपलब्ध">Medium available</span></div>
     </div>
   </div>
 </header>
 
 <main class="wrap">
 
-  <!-- ============================================================
-    RAZORPAY SETUP — replace the buy-btn href values below with your
-    actual Razorpay Payment Page short URLs once created.
-    See WEEKEND-PLAN.md for the full setup + auto-delivery steps.
-  ============================================================= -->
-
-  <div class="section-head" style="margin-top: 0;">
-    <div>
-      <p class="label i18n" data-en="Jump to" data-hi="यहाँ जाएँ">Jump to</p>
-      <h2 style="font-size:20px;">
-        <a href="#physics-papers" class="i18n" data-en="Physics" data-hi="भौतिकी" style="text-decoration:none; color:var(--marigold);">Physics</a>
-        &nbsp;·&nbsp;
-        <a href="#chemistry-papers" class="i18n" data-en="Chemistry" data-hi="रसायन विज्ञान" style="text-decoration:none; color:var(--marigold);">Chemistry</a>
-        &nbsp;·&nbsp;
-        <a href="#biology-papers" class="i18n" data-en="Biology" data-hi="जीव विज्ञान" style="text-decoration:none; color:var(--marigold);">Biology</a>
-      </h2>
-    </div>
-  </div>
-
-  <section class="paper-section" id="physics-papers" style="padding-top:8px;">
+  <!-- Part A -->
+  <section class="paper-section">
     <div class="section-head">
       <div>
-        <p class="label i18n" data-en="Physics" data-hi="भौतिकी">Physics</p>
-        <h2 class="i18n" data-en="Solved Papers" data-hi="हल प्रश्नपत्र">Solved Papers</h2>
+        <p class="label i18n" data-en="Part A" data-hi="खंड अ">Part A</p>
+        <h2 class="i18n" data-en="Electricity &amp; Magnetism" data-hi="विद्युत तथा चुंबकत्व">Electricity &amp; Magnetism</h2>
       </div>
-      <span class="marks i18n" data-en="Last 5 years" data-hi="पिछले 5 साल">Last 5 years</span>
+      <span class="marks i18n" data-en="35 marks · Units 1–5" data-hi="35 अंक · यूनिट 1–5">35 marks · Units 1–5</span>
     </div>
 
-  <div class="bundle-banner">
-    <div>
-      <strong class="i18n" data-en="Pack: all 5 years" data-hi="पैक: सभी 5 साल">Pack: all 5 years</strong>
-      <p class="i18n" data-en="Save vs buying individually." data-hi="अलग-अलग खरीदने की तुलना में बचत।" style="margin:4px 0 0; color: var(--muted); font-size: 14px;">Save vs buying individually.</p>
-    </div>
-    <div style="display:flex; align-items:center; gap:16px;">
-      <span class="price">₹349</span>
-      <!-- Replace with your Razorpay Payment Page short URL for the bundle -->
-      <a class="buy-btn" href="https://pages.razorpay.com/REPLACE_WITH_PHYSICS_BUNDLE_PAGE_ID" target="_blank" rel="noopener">
-        <span class="i18n" data-en="Buy Pack" data-hi="पैक खरीदें">Buy Pack</span>
-      </a>
-    </div>
-  </div>
+    <div class="unit-grid">
 
-  <div class="paper-grid">
-
-    <div class="paper-item">
-      <span class="year">2025</span>
-      <h3 class="i18n" data-en="UP Board Physics 2025 — Solved" data-hi="यूपी बोर्ड भौतिकी 2025 — हल किया गया">UP Board Physics 2025 — Solved</h3>
-      <p class="desc i18n" data-en="Full paper with unit-tagged step-by-step solutions." data-hi="पूरा प्रश्नपत्र, यूनिट के अनुसार टैग किए गए चरण-दर-चरण हल के साथ।">Full paper with unit-tagged step-by-step solutions.</p>
-      <div class="price-row">
-        <span class="price">₹79</span>
-        <a class="buy-btn" href="https://pages.razorpay.com/REPLACE_WITH_PHYSICS_2025_PAGE_ID" target="_blank" rel="noopener">
-          <span class="i18n" data-en="Buy Now" data-hi="अभी खरीदें">Buy Now</span>
-        </a>
-      </div>
-    </div>
-
-    <div class="paper-item">
-      <span class="year">2024</span>
-      <h3 class="i18n" data-en="UP Board Physics 2024 — Solved" data-hi="यूपी बोर्ड भौतिकी 2024 — हल किया गया">UP Board Physics 2024 — Solved</h3>
-      <p class="desc i18n" data-en="Full paper with unit-tagged step-by-step solutions." data-hi="पूरा प्रश्नपत्र, यूनिट के अनुसार टैग किए गए चरण-दर-चरण हल के साथ।">Full paper with unit-tagged step-by-step solutions.</p>
-      <div class="price-row">
-        <span class="price">₹79</span>
-        <a class="buy-btn" href="https://pages.razorpay.com/REPLACE_WITH_PHYSICS_2024_PAGE_ID" target="_blank" rel="noopener">
-          <span class="i18n" data-en="Buy Now" data-hi="अभी खरीदें">Buy Now</span>
-        </a>
-      </div>
-    </div>
-
-    <div class="paper-item">
-      <span class="year">2023</span>
-      <h3 class="i18n" data-en="UP Board Physics 2023 — Solved" data-hi="यूपी बोर्ड भौतिकी 2023 — हल किया गया">UP Board Physics 2023 — Solved</h3>
-      <p class="desc i18n" data-en="Full paper with unit-tagged step-by-step solutions." data-hi="पूरा प्रश्नपत्र, यूनिट के अनुसार टैग किए गए चरण-दर-चरण हल के साथ।">Full paper with unit-tagged step-by-step solutions.</p>
-      <div class="price-row">
-        <span class="price">₹79</span>
-        <a class="buy-btn" href="https://pages.razorpay.com/REPLACE_WITH_PHYSICS_2023_PAGE_ID" target="_blank" rel="noopener">
-          <span class="i18n" data-en="Buy Now" data-hi="अभी खरीदें">Buy Now</span>
-        </a>
-      </div>
-    </div>
-
-    <div class="paper-item">
-      <span class="year">2022</span>
-      <h3 class="i18n" data-en="UP Board Physics 2022 — Solved" data-hi="यूपी बोर्ड भौतिकी 2022 — हल किया गया">UP Board Physics 2022 — Solved</h3>
-      <p class="desc i18n" data-en="Full paper with unit-tagged step-by-step solutions." data-hi="पूरा प्रश्नपत्र, यूनिट के अनुसार टैग किए गए चरण-दर-चरण हल के साथ।">Full paper with unit-tagged step-by-step solutions.</p>
-      <div class="price-row">
-        <span class="price">₹79</span>
-        <a class="buy-btn" href="https://pages.razorpay.com/REPLACE_WITH_PHYSICS_2022_PAGE_ID" target="_blank" rel="noopener">
-          <span class="i18n" data-en="Buy Now" data-hi="अभी खरीदें">Buy Now</span>
-        </a>
-      </div>
-    </div>
-
-    <div class="paper-item">
-      <span class="year">2021</span>
-      <h3 class="i18n" data-en="UP Board Physics 2021 — Solved" data-hi="यूपी बोर्ड भौतिकी 2021 — हल किया गया">UP Board Physics 2021 — Solved</h3>
-      <p class="desc i18n" data-en="Full paper with unit-tagged step-by-step solutions." data-hi="पूरा प्रश्नपत्र, यूनिट के अनुसार टैग किए गए चरण-दर-चरण हल के साथ।">Full paper with unit-tagged step-by-step solutions.</p>
-      <div class="price-row">
-        <span class="price">₹79</span>
-        <a class="buy-btn" href="https://pages.razorpay.com/REPLACE_WITH_PHYSICS_2021_PAGE_ID" target="_blank" rel="noopener">
-          <span class="i18n" data-en="Buy Now" data-hi="अभी खरीदें">Buy Now</span>
-        </a>
-      </div>
-    </div>
-
-  </div>
-
-  </section>
-
-  <section class="paper-section" id="chemistry-papers">
-    <div class="section-head">
-      <div>
-        <p class="label i18n" data-en="Chemistry" data-hi="रसायन विज्ञान">Chemistry</p>
-        <h2 class="i18n" data-en="Solved Papers" data-hi="हल प्रश्नपत्र">Solved Papers</h2>
-      </div>
-      <span class="marks i18n" data-en="Last 5 years" data-hi="पिछले 5 साल">Last 5 years</span>
-    </div>
-
-    <div class="bundle-banner">
-      <div>
-        <strong class="i18n" data-en="Pack: all 5 years" data-hi="पैक: सभी 5 साल">Pack: all 5 years</strong>
-        <p class="i18n" data-en="Save vs buying individually." data-hi="अलग-अलग खरीदने की तुलना में बचत।" style="margin:4px 0 0; color: var(--muted); font-size: 14px;">Save vs buying individually.</p>
-      </div>
-      <div style="display:flex; align-items:center; gap:16px;">
-        <span class="price">₹349</span>
-        <a class="buy-btn" href="https://pages.razorpay.com/REPLACE_WITH_CHEMISTRY_BUNDLE_PAGE_ID" target="_blank" rel="noopener">
-          <span class="i18n" data-en="Buy Pack" data-hi="पैक खरीदें">Buy Pack</span>
-        </a>
-      </div>
-    </div>
-
-    <div class="paper-grid">
-
-      <div class="paper-item">
-        <span class="year">2025</span>
-        <h3 class="i18n" data-en="UP Board Chemistry 2025 — Solved" data-hi="यूपी बोर्ड रसायन विज्ञान 2025 — हल किया गया">UP Board Chemistry 2025 — Solved</h3>
-        <p class="desc i18n" data-en="Full paper with unit-tagged step-by-step solutions." data-hi="पूरा प्रश्नपत्र, यूनिट के अनुसार टैग किए गए चरण-दर-चरण हल के साथ।">Full paper with unit-tagged step-by-step solutions.</p>
-        <div class="price-row">
-          <span class="price">₹79</span>
-          <a class="buy-btn" href="https://pages.razorpay.com/REPLACE_WITH_CHEMISTRY_2025_PAGE_ID" target="_blank" rel="noopener">
-            <span class="i18n" data-en="Buy Now" data-hi="अभी खरीदें">Buy Now</span>
-          </a>
+      <!-- Unit 1 -->
+      <article class="unit-card">
+        <span class="unit-index">Unit 1</span>
+        <div class="thumb">
+          <div class="placeholder" data-video-lang="en">Video not yet uploaded (EN)<br>paste YouTube embed URL here</div>
+          <iframe data-video-lang="hi" src="https://www.youtube.com/embed/KwDSVZWx0s4" width="100%" height="100%" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-      </div>
+        <div class="body">
+          <h3 class="i18n" data-en="Electrostatics" data-hi="वैद्युत स्थैतिकी">Electrostatics</h3>
 
-      <div class="paper-item">
-        <span class="year">2024</span>
-        <h3 class="i18n" data-en="UP Board Chemistry 2024 — Solved" data-hi="यूपी बोर्ड रसायन विज्ञान 2024 — हल किया गया">UP Board Chemistry 2024 — Solved</h3>
-        <p class="desc i18n" data-en="Full paper with unit-tagged step-by-step solutions." data-hi="पूरा प्रश्नपत्र, यूनिट के अनुसार टैग किए गए चरण-दर-चरण हल के साथ।">Full paper with unit-tagged step-by-step solutions.</p>
-        <div class="price-row">
-          <span class="price">₹79</span>
-          <a class="buy-btn" href="https://pages.razorpay.com/REPLACE_WITH_CHEMISTRY_2024_PAGE_ID" target="_blank" rel="noopener">
-            <span class="i18n" data-en="Buy Now" data-hi="अभी खरीदें">Buy Now</span>
-          </a>
-        </div>
-      </div>
+          <!-- Buttons placed right after title (like your screenshot) -->
+          <div class="unit-buttons">
+            <a class="btn-small btn-papers buy-papers-btn"
+               data-en-link="papers.html" data-hi-link="papers.html"
+               href="papers.html">Papers</a>
+            <a class="btn-small btn-notes buy-note-btn"
+               data-en-link="https://pages.razorpay.com/REPLACE_WITH_UNIT1_ENGLISH"
+               data-hi-link="https://pages.razorpay.com/REPLACE_WITH_UNIT1_HINDI"
+               href="#" target="_blank">Notes</a>
+          </div>
 
-      <div class="paper-item">
-        <span class="year">2023</span>
-        <h3 class="i18n" data-en="UP Board Chemistry 2023 — Solved" data-hi="यूपी बोर्ड रसायन विज्ञान 2023 — हल किया गया">UP Board Chemistry 2023 — Solved</h3>
-        <p class="desc i18n" data-en="Full paper with unit-tagged step-by-step solutions." data-hi="पूरा प्रश्नपत्र, यूनिट के अनुसार टैग किए गए चरण-दर-चरण हल के साथ।">Full paper with unit-tagged step-by-step solutions.</p>
-        <div class="price-row">
-          <span class="price">₹79</span>
-          <a class="buy-btn" href="https://pages.razorpay.com/REPLACE_WITH_CHEMISTRY_2023_PAGE_ID" target="_blank" rel="noopener">
-            <span class="i18n" data-en="Buy Now" data-hi="अभी खरीदें">Buy Now</span>
-          </a>
-        </div>
-      </div>
+          <p class="topics i18n" data-en="Electric charges &amp; fields, electric dipole, electric potential, capacitance, use of capacitors." data-hi="विद्युत आवेश एवं क्षेत्र, विद्युत द्विध्रुव, विद्युत विभव, धारिता, संधारित्रों का उपयोग।">Electric charges &amp; fields, electric dipole, electric potential, capacitance, use of capacitors.</p>
 
-      <div class="paper-item">
-        <span class="year">2022</span>
-        <h3 class="i18n" data-en="UP Board Chemistry 2022 — Solved" data-hi="यूपी बोर्ड रसायन विज्ञान 2022 — हल किया गया">UP Board Chemistry 2022 — Solved</h3>
-        <p class="desc i18n" data-en="Full paper with unit-tagged step-by-step solutions." data-hi="पूरा प्रश्नपत्र, यूनिट के अनुसार टैग किए गए चरण-दर-चरण हल के साथ।">Full paper with unit-tagged step-by-step solutions.</p>
-        <div class="price-row">
-          <span class="price">₹79</span>
-          <a class="buy-btn" href="https://pages.razorpay.com/REPLACE_WITH_CHEMISTRY_2022_PAGE_ID" target="_blank" rel="noopener">
-            <span class="i18n" data-en="Buy Now" data-hi="अभी खरीदें">Buy Now</span>
-          </a>
+          <div class="meta">
+            <span class="i18n" data-en="Part A" data-hi="खंड अ">Part A</span>
+            <span class="weight i18n" data-en="Core unit" data-hi="मुख्य यूनिट">Core unit</span>
+          </div>
         </div>
-      </div>
+      </article>
 
-      <div class="paper-item">
-        <span class="year">2021</span>
-        <h3 class="i18n" data-en="UP Board Chemistry 2021 — Solved" data-hi="यूपी बोर्ड रसायन विज्ञान 2021 — हल किया गया">UP Board Chemistry 2021 — Solved</h3>
-        <p class="desc i18n" data-en="Full paper with unit-tagged step-by-step solutions." data-hi="पूरा प्रश्नपत्र, यूनिट के अनुसार टैग किए गए चरण-दर-चरण हल के साथ।">Full paper with unit-tagged step-by-step solutions.</p>
-        <div class="price-row">
-          <span class="price">₹79</span>
-          <a class="buy-btn" href="https://pages.razorpay.com/REPLACE_WITH_CHEMISTRY_2021_PAGE_ID" target="_blank" rel="noopener">
-            <span class="i18n" data-en="Buy Now" data-hi="अभी खरीदें">Buy Now</span>
-          </a>
+      <!-- Unit 2 -->
+      <article class="unit-card">
+        <span class="unit-index">Unit 2</span>
+        <div class="thumb">
+          <div class="placeholder" data-video-lang="en">Video not yet uploaded (EN)<br>paste YouTube embed URL here</div>
+          <div class="placeholder" data-video-lang="hi">वीडियो अभी अपलोड नहीं हुआ (HI)<br>YouTube embed URL यहाँ डालें</div>
         </div>
-      </div>
+        <div class="body">
+          <h3 class="i18n" data-en="Current Electricity" data-hi="विद्युत धारा">Current Electricity</h3>
+          <div class="unit-buttons">
+            <a class="btn-small btn-papers buy-papers-btn" data-en-link="papers.html" data-hi-link="papers.html" href="papers.html">Papers</a>
+            <a class="btn-small btn-notes buy-note-btn" data-en-link="https://pages.razorpay.com/REPLACE_WITH_UNIT2_ENGLISH" data-hi-link="https://pages.razorpay.com/REPLACE_WITH_UNIT2_HINDI" href="#" target="_blank">Notes</a>
+          </div>
+          <p class="topics i18n" data-en="Electric current, Ohm's law, resistivity &amp; conductivity, electric cells, Wheatstone bridge." data-hi="विद्युत धारा, ओम का नियम, प्रतिरोधकता एवं चालकता, विद्युत सेल, व्हीटस्टोन सेतु।">Electric current, Ohm's law, resistivity &amp; conductivity, electric cells, Wheatstone bridge.</p>
+          <div class="meta">
+            <span class="i18n" data-en="Part A" data-hi="खंड अ">Part A</span>
+            <span class="weight i18n" data-en="Core unit" data-hi="मुख्य यूनिट">Core unit</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Unit 3 to Unit 9 (same pattern) -->
+
+      <article class="unit-card">
+        <span class="unit-index">Unit 3</span>
+        <div class="thumb">
+          <div class="placeholder" data-video-lang="en">Video not yet uploaded (EN)<br>paste YouTube embed URL here</div>
+          <div class="placeholder" data-video-lang="hi">वीडियो अभी अपलोड नहीं हुआ (HI)<br>YouTube embed URL यहाँ डालें</div>
+        </div>
+        <div class="body">
+          <h3 class="i18n" data-en="Magnetic Effects of Current &amp; Magnetism" data-hi="धारा के चुंबकीय प्रभाव तथा चुंबकत्व">Magnetic Effects of Current &amp; Magnetism</h3>
+          <div class="unit-buttons">
+            <a class="btn-small btn-papers buy-papers-btn" data-en-link="papers.html" data-hi-link="papers.html" href="papers.html">Papers</a>
+            <a class="btn-small btn-notes buy-note-btn" data-en-link="https://pages.razorpay.com/REPLACE_WITH_UNIT3_ENGLISH" data-hi-link="https://pages.razorpay.com/REPLACE_WITH_UNIT3_HINDI" href="#" target="_blank">Notes</a>
+          </div>
+          <p class="topics i18n" data-en="Magnetic field, Biot-Savart law, Ampere's law, solenoids, electromagnets, permanent magnets." data-hi="चुंबकीय क्षेत्र, बायो-सावर्ट नियम, एम्पीयर का नियम, परिनालिका, विद्युत चुंबक, स्थायी चुंबक।">Magnetic field, Biot-Savart law, Ampere's law, solenoids, electromagnets, permanent magnets.</p>
+          <div class="meta">
+            <span class="i18n" data-en="Part A" data-hi="खंड अ">Part A</span>
+            <span class="weight i18n" data-en="Core unit" data-hi="मुख्य यूनिट">Core unit</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- You can continue the same pattern for Units 4, 5, 6, 7, 8, 9 -->
 
     </div>
   </section>
 
-  <section class="paper-section" id="biology-papers">
-    <div class="section-head">
-      <div>
-        <p class="label i18n" data-en="Biology" data-hi="जीव विज्ञान">Biology</p>
-        <h2 class="i18n" data-en="Solved Papers" data-hi="हल प्रश्नपत्र">Solved Papers</h2>
-      </div>
-      <span class="marks i18n" data-en="Last 5 years" data-hi="पिछले 5 साल">Last 5 years</span>
-    </div>
-
-    <div class="bundle-banner">
-      <div>
-        <strong class="i18n" data-en="Pack: all 5 years" data-hi="पैक: सभी 5 साल">Pack: all 5 years</strong>
-        <p class="i18n" data-en="Save vs buying individually." data-hi="अलग-अलग खरीदने की तुलना में बचत।" style="margin:4px 0 0; color: var(--muted); font-size: 14px;">Save vs buying individually.</p>
-      </div>
-      <div style="display:flex; align-items:center; gap:16px;">
-        <span class="price">₹349</span>
-        <a class="buy-btn" href="https://pages.razorpay.com/REPLACE_WITH_BIOLOGY_BUNDLE_PAGE_ID" target="_blank" rel="noopener">
-          <span class="i18n" data-en="Buy Pack" data-hi="पैक खरीदें">Buy Pack</span>
-        </a>
-      </div>
-    </div>
-
-    <div class="paper-grid">
-
-      <div class="paper-item">
-        <span class="year">2025</span>
-        <h3 class="i18n" data-en="UP Board Biology 2025 — Solved" data-hi="यूपी बोर्ड जीव विज्ञान 2025 — हल किया गया">UP Board Biology 2025 — Solved</h3>
-        <p class="desc i18n" data-en="Full paper with unit-tagged step-by-step solutions." data-hi="पूरा प्रश्नपत्र, यूनिट के अनुसार टैग किए गए चरण-दर-चरण हल के साथ।">Full paper with unit-tagged step-by-step solutions.</p>
-        <div class="price-row">
-          <span class="price">₹79</span>
-          <a class="buy-btn" href="https://pages.razorpay.com/REPLACE_WITH_BIOLOGY_2025_PAGE_ID" target="_blank" rel="noopener">
-            <span class="i18n" data-en="Buy Now" data-hi="अभी खरीदें">Buy Now</span>
-          </a>
-        </div>
-      </div>
-
-      <div class="paper-item">
-        <span class="year">2024</span>
-        <h3 class="i18n" data-en="UP Board Biology 2024 — Solved" data-hi="यूपी बोर्ड जीव विज्ञान 2024 — हल किया गया">UP Board Biology 2024 — Solved</h3>
-        <p class="desc i18n" data-en="Full paper with unit-tagged step-by-step solutions." data-hi="पूरा प्रश्नपत्र, यूनिट के अनुसार टैग किए गए चरण-दर-चरण हल के साथ।">Full paper with unit-tagged step-by-step solutions.</p>
-        <div class="price-row">
-          <span class="price">₹79</span>
-          <a class="buy-btn" href="https://pages.razorpay.com/REPLACE_WITH_BIOLOGY_2024_PAGE_ID" target="_blank" rel="noopener">
-            <span class="i18n" data-en="Buy Now" data-hi="अभी खरीदें">Buy Now</span>
-          </a>
-        </div>
-      </div>
-
-      <div class="paper-item">
-        <span class="year">2023</span>
-        <h3 class="i18n" data-en="UP Board Biology 2023 — Solved" data-hi="यूपी बोर्ड जीव विज्ञान 2023 — हल किया गया">UP Board Biology 2023 — Solved</h3>
-        <p class="desc i18n" data-en="Full paper with unit-tagged step-by-step solutions." data-hi="पूरा प्रश्नपत्र, यूनिट के अनुसार टैग किए गए चरण-दर-चरण हल के साथ।">Full paper with unit-tagged step-by-step solutions.</p>
-        <div class="price-row">
-          <span class="price">₹79</span>
-          <a class="buy-btn" href="https://pages.razorpay.com/REPLACE_WITH_BIOLOGY_2023_PAGE_ID" target="_blank" rel="noopener">
-            <span class="i18n" data-en="Buy Now" data-hi="अभी खरीदें">Buy Now</span>
-          </a>
-        </div>
-      </div>
-
-      <div class="paper-item">
-        <span class="year">2022</span>
-        <h3 class="i18n" data-en="UP Board Biology 2022 — Solved" data-hi="यूपी बोर्ड जीव विज्ञान 2022 — हल किया गया">UP Board Biology 2022 — Solved</h3>
-        <p class="desc i18n" data-en="Full paper with unit-tagged step-by-step solutions." data-hi="पूरा प्रश्नपत्र, यूनिट के अनुसार टैग किए गए चरण-दर-चरण हल के साथ।">Full paper with unit-tagged step-by-step solutions.</p>
-        <div class="price-row">
-          <span class="price">₹79</span>
-          <a class="buy-btn" href="https://pages.razorpay.com/REPLACE_WITH_BIOLOGY_2022_PAGE_ID" target="_blank" rel="noopener">
-            <span class="i18n" data-en="Buy Now" data-hi="अभी खरीदें">Buy Now</span>
-          </a>
-        </div>
-      </div>
-
-      <div class="paper-item">
-        <span class="year">2021</span>
-        <h3 class="i18n" data-en="UP Board Biology 2021 — Solved" data-hi="यूपी बोर्ड जीव विज्ञान 2021 — हल किया गया">UP Board Biology 2021 — Solved</h3>
-        <p class="desc i18n" data-en="Full paper with unit-tagged step-by-step solutions." data-hi="पूरा प्रश्नपत्र, यूनिट के अनुसार टैग किए गए चरण-दर-चरण हल के साथ।">Full paper with unit-tagged step-by-step solutions.</p>
-        <div class="price-row">
-          <span class="price">₹79</span>
-          <a class="buy-btn" href="https://pages.razorpay.com/REPLACE_WITH_BIOLOGY_2021_PAGE_ID" target="_blank" rel="noopener">
-            <span class="i18n" data-en="Buy Now" data-hi="अभी खरीदें">Buy Now</span>
-          </a>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <div class="doc" style="max-width: 720px; margin-top: 40px; padding: 0;">
-    <h2 class="i18n" data-en="How delivery works" data-hi="डिलीवरी कैसे होती है" style="font-size:18px;">How delivery works</h2>
-    <p class="i18n" data-en="After payment, you'll receive the PDF by email within a few minutes. If it doesn't arrive, check spam or reach out on the Contact page." data-hi="भुगतान के बाद, आपको कुछ मिनटों में ईमेल द्वारा PDF प्राप्त होगी। अगर नहीं मिलती है, तो स्पैम चेक करें या Contact पेज पर संपर्क करें।">After payment, you'll receive the PDF by email within a few minutes. If it doesn't arrive, check spam or reach out on the Contact page.</p>
-  </div>
+  <!-- Part B continues with same button style... -->
 
 </main>
 
 <footer>
   <div class="wrap">
-    <span>© 2026 UPBoardExam.com · UP Board Class 12 Physics, Chemistry &amp; Biology</span>
-    <span><a href="papers.html" class="i18n" data-en="Papers" data-hi="प्रश्नपत्र">Papers</a> · <a href="about.html">About</a> · <a href="contact.html">Contact</a> · <a href="privacy-policy.html">Privacy Policy</a></span>
+    <span>© 2026 UPBoardExam.com · UP Board Class 12 Physics</span>
   </div>
 </footer>
 
 <script>
 function setLang(lang) {
   document.body.setAttribute('data-lang', lang);
+
   document.querySelectorAll('.i18n').forEach(function(el) {
     var text = el.dataset[lang];
     if (text) el.innerHTML = text;
   });
+
   document.querySelectorAll('.lang-toggle button').forEach(function(b) {
     b.classList.toggle('active', b.dataset.lang === lang);
   });
+
+  document.querySelectorAll('[data-video-lang]').forEach(function(el) {
+    el.style.display = (el.getAttribute('data-video-lang') === lang) ? '' : 'none';
+  });
+
+  document.querySelectorAll('.buy-note-btn').forEach(function(btn) {
+    btn.href = (lang === 'hi' && btn.dataset.hiLink) ? btn.dataset.hiLink : btn.dataset.enLink;
+  });
+
+  document.querySelectorAll('.buy-papers-btn').forEach(function(btn) {
+    btn.href = (lang === 'hi' && btn.dataset.hiLink) ? btn.dataset.hiLink : btn.dataset.enLink;
+  });
+
   try { localStorage.setItem('site-lang', lang); } catch (e) {}
 }
+
 (function() {
-  var savedLang = 'en';
-  try { savedLang = localStorage.getItem('site-lang') || 'en'; } catch (e) {}
+  var savedLang = localStorage.getItem('site-lang') || 'en';
   setLang(savedLang);
 })();
 </script>
