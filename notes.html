@@ -13,25 +13,33 @@
     }
 
     .paper-item {
-      min-height: 265px;
+      min-height: 255px;
       display: flex;
       flex-direction: column;
+      padding: 16px 18px 14px; /* Reduced padding */
     }
 
     .paper-item .desc {
       flex: 1;
       display: -webkit-box;
-      -webkit-line-clamp: 3;
+      -webkit-line-clamp: 2; /* Reduced to 2 lines to save space */
       -webkit-box-orient: vertical;
       overflow: hidden;
-      font-size: 13px;
-      line-height: 1.45;
+      font-size: 12.5px;
+      line-height: 1.35;
+      margin-bottom: 8px;
     }
 
     .paper-item h3 {
-      font-size: 17px;
-      margin-bottom: 6px;
-      min-height: 42px;
+      font-size: 16.5px;
+      margin-bottom: 4px;
+      min-height: 38px;
+      line-height: 1.25;
+    }
+
+    .paper-item .price-row {
+      margin-top: auto;
+      padding-top: 8px;
     }
 
     /* Reduce nav jumping */
@@ -218,8 +226,6 @@
     </div>
   </section>
 
-  <div class="ad-slot">Ad space — between subjects</div>
-
   <!-- Chemistry Notes -->
   <section class="paper-section" id="chemistry-notes">
     <div class="section-head">
@@ -256,8 +262,6 @@
       </div>
     </div>
   </section>
-
-  <div class="ad-slot">Ad space — between subjects</div>
 
   <!-- Biology Notes -->
   <section class="paper-section" id="biology-notes">
