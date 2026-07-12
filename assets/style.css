@@ -200,6 +200,7 @@ body[data-lang="hi"] [data-video-lang="en"] { display: none; }
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 20px;
+  align-items: stretch; /* Makes all cards equal height */
 }
 .unit-card {
   background: var(--paper);
@@ -260,6 +261,10 @@ body[data-lang="hi"] [data-video-lang="en"] { display: none; }
   color: #4b5563;
   margin: 0 0 14px;
   flex: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .unit-card .meta {
   display: flex;
