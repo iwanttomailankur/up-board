@@ -181,6 +181,9 @@ function setLang(lang) {
   document.querySelectorAll('.lang-toggle button').forEach(function(b) {
     b.classList.toggle('active', b.dataset.lang === lang);
   });
+  document.querySelectorAll('[data-video-lang]').forEach(function(el) {
+    el.style.display = (el.getAttribute('data-video-lang') === lang) ? '' : 'none';
+  });
   try { localStorage.setItem('site-lang', lang); } catch (e) {}
 }
 (function() {
