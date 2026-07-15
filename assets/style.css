@@ -372,7 +372,7 @@ body[data-lang="hi"] .thumb iframe[data-video-lang="hi"] { display: block; }
   color: var(--teal-deep);
   font-size: 13.5px;
   line-height: 1.6;
-  margin: 0 0 16px;
+  margin: 0 0 0;
   flex: 1;
 }
 
