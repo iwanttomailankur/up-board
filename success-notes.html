@@ -74,7 +74,7 @@
       "6": "प्रकाशिकी",
       "7": "विकिरण तथा द्रव्य की द्वैत प्रकृति",
       "8": "परमाणु तथा नाभिक",
-      "9": "अर्धचालक इलेक्ट्रोनिकी"
+      "9": "इलेक्ट्रॉनिक युक्तियाँ"
     };
 
     function getParam(name) {
@@ -103,6 +103,15 @@
 
       btn.href = `https://drive.google.com/uc?export=download&id=${fileId}`;
       btn.style.display = 'block';
+
+      // Cosmetic only: hides the file ID/params from the address bar,
+      // browser history, and screenshots. Does NOT hide the real link
+      // from "Copy link address" or "View Page Source" on the button
+      // itself — see the note in SECURITY-README.md if you have it,
+      // or just keep in mind this is tidiness, not real protection.
+      if (window.history && window.history.replaceState) {
+        window.history.replaceState(null, '', '/thank-you.html');
+      }
     }
 
     window.onload = initPage;
