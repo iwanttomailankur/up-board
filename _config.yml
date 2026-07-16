@@ -1,0 +1,16 @@
+# GitHub Metadata Fix
+github:
+  metadata: false
+
+# Site Settings
+title: UP Board Exam
+description: Notes, papers and study material for UP Board students
+url: "https://upboardexam.com"
+baseurl: ""          # Leave empty because you're using a custom domain
+
+# Theme
+theme: jekyll-theme-primer
+
+# Optional but recommended
+plugins:
+  - jekyll-seo-tag
