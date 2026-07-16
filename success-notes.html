@@ -38,6 +38,10 @@
       <a id="btn-download" href="#" class="download-btn hi" target="_blank" rel="noopener" style="display:none;">
         📥 नोट्स डाउनलोड करें (PDF)
       </a>
+
+      <p id="error-msg" style="display:none; color: var(--muted); font-size: 14px; text-align:center; margin: 8px 0 0;">
+        यह लिंक अमान्य है। कृपया Contact पेज से संपर्क करें।
+      </p>
     </div>
 
     <div style="background: var(--navy); padding: 18px 20px; border-radius: var(--radius-sm); font-size: 13px; color: #9CA3AF;">
@@ -52,26 +56,53 @@
   </footer>
 
   <script>
-    // Usage: success-notes.html?unit=1&title=वैद्युत स्थैतिकी&id=DRIVE_FILE_ID
+    // ------------------------------------------------------------------
+    // Usage in Razorpay's "Redirect to your website" field — plain ASCII,
+    // so it won't get rejected by its "please enter a valid URL" check:
+    //   https://upboardexam.com/success-notes.html?unit=1&title=VaidyutSthaitiki&id=DRIVE_FILE_ID
+    //
+    // "title" can be Hinglish (shown as-is) or left out entirely, in which
+    // case the Hindi name is looked up below by unit number as a fallback.
+    // Add a row here whenever you add a new unit's notes.
+    // ------------------------------------------------------------------
+    const UNIT_TITLES = {
+      "1": "वैद्युत स्थैतिकी",
+      "2": "विद्युत धारा",
+      "3": "विद्युत के चुंबकीय प्रभाव तथा चुंबकत्व",
+      "4": "वैद्युतचुंबकीय प्रेरण तथा प्रत्यावर्ती धारा",
+      "5": "वैद्युतचुंबकीय तरंगें",
+      "6": "प्रकाशिकी",
+      "7": "विकिरण तथा द्रव्य की द्वैत प्रकृति",
+      "8": "परमाणु तथा नाभिक",
+      "9": "इलेक्ट्रॉनिक युक्तियाँ"
+    };
+
     function getParam(name) {
       return new URLSearchParams(window.location.search).get(name);
     }
 
     function initPage() {
       const unit = getParam('unit') || '';
-      const title = getParam('title') || 'नोट्स';
       const fileId = getParam('id');
+      const title = getParam('title') || UNIT_TITLES[unit] || 'नोट्स';
+
+      const btn = document.getElementById('btn-download');
+      const errorMsg = document.getElementById('error-msg');
+
+      if (!fileId) {
+        document.getElementById('unit-label').textContent = '';
+        document.getElementById('unit-name').textContent = '';
+        document.getElementById('subtitle').style.display = 'none';
+        errorMsg.style.display = 'block';
+        return;
+      }
 
       document.getElementById('unit-label').textContent = unit ? `भौतिकी • यूनिट ${unit}` : '';
       document.getElementById('unit-name').textContent = title;
+      document.getElementById('subtitle').textContent = `आपके ${title} नोट्स तैयार हैं।`;
 
-      const btn = document.getElementById('btn-download');
-
-      if (fileId) {
-        btn.href = `https://drive.google.com/uc?export=download&id=${fileId}`;
-        btn.style.display = 'block';
-        document.getElementById('subtitle').textContent = `आपके ${title} नोट्स तैयार हैं।`;
-      }
+      btn.href = `https://drive.google.com/uc?export=download&id=${fileId}`;
+      btn.style.display = 'block';
     }
 
     window.onload = initPage;
