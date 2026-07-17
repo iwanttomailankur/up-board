@@ -493,9 +493,12 @@ footer a:hover { color: var(--amber); }
 
 @media (max-width: 640px) {
   .wrap { padding: 0 18px; }
-  .topbar .wrap { flex-direction: column; align-items: flex-start; }
-  .nav-links { width: 100%; justify-content: space-between; gap: 14px; }
-  .subject-links { gap: 14px; }
+  /* topbar: brand + Class toggle share the top row; subjects wrap below */
+  .topbar .wrap { flex-direction: column; align-items: flex-start; position: relative; padding-right: 168px; }
+  .topbar .class-toggle { position: absolute; top: 11px; right: 16px; }
+  .topbar .class-toggle .ct-opt { padding: 5px 10px; font-size: 12px; }
+  .nav-links { width: 100%; justify-content: flex-start; gap: 14px; }
+  .subject-links { gap: 14px; flex-wrap: wrap; }
   .hero { padding: 36px 0 30px; }
   .hero-stats { gap: 24px; }
   .section-head { flex-direction: column; align-items: flex-start; }
