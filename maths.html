@@ -1,19 +1,75 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>यूपी बोर्ड कक्षा 12 गणित — यूनिट-वार वीडियो नोट्स</title>
-<meta name="description" content="यूपी बोर्ड कक्षा 12 गणित, यूनिट-दर-यूनिट, आधिकारिक यूपीएमएसपी पाठ्यक्रम एवं वेटेज के अनुसार, हिंदी माध्यम में।">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>यूपी बोर्ड कक्षा 12 गणित — यूनिट-वार नोट्स, प्रश्न बैंक व PYQ</title>
+  <meta name="description" content="यूपी बोर्ड कक्षा 12 गणित — यूनिट-दर-यूनिट नोट्स PDF, प्रश्न बैंक और PYQ हल सहित। आधिकारिक यूपीएमएसपी पाठ्यक्रम व वेटेज के अनुसार, हिंदी माध्यम में।">
 
-<!--
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
--->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/physics.css">
 </head>
 <body>
+
+<!-- SVG icon sprite (defined once, reused across all cards) -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <symbol id="i-notes" viewBox="0 0 24 24">
+    <path d="M5 3a1.5 1.5 0 0 1 1.5-1.5H15l4 4V21A1.5 1.5 0 0 1 17.5 22.5h-11A1.5 1.5 0 0 1 5 21z" fill="#2F6690"/>
+    <path d="M15 1.5l4 4h-4z" fill="#8FB3CB"/>
+    <rect x="8" y="10" width="8" height="1.6" rx=".8" fill="#fff"/>
+    <rect x="8" y="13.5" width="8" height="1.6" rx=".8" fill="#fff"/>
+    <rect x="8" y="17" width="5" height="1.6" rx=".8" fill="#fff"/>
+  </symbol>
+  <symbol id="i-ncert" viewBox="0 0 24 24">
+    <path d="M4 4a2 2 0 0 1 2-2h14v16H6a2 2 0 0 0-2 2z" fill="#4FA69C"/>
+    <path d="M4 20a2 2 0 0 1 2-2h14v4H6a2 2 0 0 1-2-2z" fill="#2F6690"/>
+    <rect x="8" y="6" width="8" height="1.6" rx=".8" fill="#fff"/>
+    <rect x="8" y="9.5" width="6" height="1.6" rx=".8" fill="#fff"/>
+  </symbol>
+  <symbol id="i-intext" viewBox="0 0 24 24">
+    <rect x="2" y="2" width="20" height="20" rx="5" fill="#C0392B"/>
+    <path d="M12 15.2v-.6c0-1 .55-1.6 1.35-2.14.8-.55 1.4-1.2 1.4-2.36A2.75 2.75 0 0 0 12 7.35 2.83 2.83 0 0 0 9.2 9.6" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round"/>
+    <circle cx="12" cy="18" r="1.3" fill="#fff"/>
+  </symbol>
+  <symbol id="i-exercise" viewBox="0 0 24 24">
+    <rect x="2" y="2" width="20" height="20" rx="5" fill="#2E8B57"/>
+    <path d="M7 12.5l3.2 3.2L17 9" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="i-pyq" viewBox="0 0 24 24">
+    <path d="M5 3a1.5 1.5 0 0 1 1.5-1.5H15l4 4V21A1.5 1.5 0 0 1 17.5 22.5h-11A1.5 1.5 0 0 1 5 21z" fill="#C77E1B"/>
+    <path d="M15 1.5l4 4h-4z" fill="#EBC894"/>
+    <circle cx="12" cy="14" r="4.4" fill="none" stroke="#fff" stroke-width="1.6"/>
+    <path d="M12 11.5V14l1.8 1.2" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="i-qbank" viewBox="0 0 24 24">
+    <path d="M3 6a2 2 0 0 1 2-2h5l2 2.5h7a2 2 0 0 1 2 2V18a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" fill="#E8A33D"/>
+    <path d="M3 10h18v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" fill="#C77E1B"/>
+  </symbol>
+  <symbol id="i-revision" viewBox="0 0 24 24">
+    <path d="M20 12a8 8 0 1 1-3.1-6.32" fill="none" stroke="#2F6690" stroke-width="2.4" stroke-linecap="round"/>
+    <path d="M20 3.5v5h-5z" fill="#2F6690"/>
+  </symbol>
+  <symbol id="i-formula" viewBox="0 0 24 24">
+    <rect x="4" y="2" width="16" height="20" rx="3" fill="#14181F"/>
+    <rect x="7" y="5" width="10" height="4" rx="1" fill="#E8A33D"/>
+    <circle cx="8.5" cy="13" r="1.2" fill="#fff"/><circle cx="12" cy="13" r="1.2" fill="#fff"/><circle cx="15.5" cy="13" r="1.2" fill="#fff"/>
+    <circle cx="8.5" cy="17" r="1.2" fill="#fff"/><circle cx="12" cy="17" r="1.2" fill="#fff"/><circle cx="15.5" cy="17" r="1.2" fill="#fff"/>
+  </symbol>
+  <symbol id="i-youtube" viewBox="0 0 24 24">
+    <rect x="1.5" y="4.5" width="21" height="15" rx="4" fill="#FF0000"/>
+    <path d="M10 9l5.2 3L10 15z" fill="#fff"/>
+  </symbol>
+  <symbol id="i-google" viewBox="0 0 48 48">
+    <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/>
+    <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/>
+    <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/>
+    <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
+  </symbol>
+</svg>
+
 
 <div class="topbar">
   <div class="wrap">
@@ -25,28 +81,16 @@
         <a href="biology.html">जीव विज्ञान</a>
         <a href="maths.html" class="active">गणित</a>
       </div>
-      <a href="notes.html">नोट्स खरीदें</a>
       <a href="papers.html">हल प्रश्नपत्र</a>
     </nav>
   </div>
 </div>
 
 <header class="hero">
-  <svg class="circuit-bg" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-    <g stroke="#4FA69C" stroke-width="1.5" fill="none" opacity="0.8">
-      <path d="M60 340 L340 60" />
-      <path d="M60 60 L120 60 L120 120" />
-      <path d="M280 340 L340 340 L340 280" />
-      <circle cx="60" cy="340" r="4" fill="#E8A33D" stroke="none"/>
-      <circle cx="340" cy="60" r="4" fill="#E8A33D" stroke="none"/>
-      <circle cx="120" cy="60" r="4" fill="#4FA69C" stroke="none"/>
-      <circle cx="340" cy="280" r="4" fill="#4FA69C" stroke="none"/>
-    </g>
-  </svg>
   <div class="wrap">
     <p class="hero-eyebrow">यूपीएमएसपी · कक्षा 12 · 2027 बोर्ड परीक्षा</p>
-    <h1>गणित, यूनिट-दर-यूनिट — कलन से लेकर प्रायिकता तक।</h1>
-    <p class="lead">छह यूनिट, एक पाठ्यक्रम, हिंदी माध्यम में। पूरे 100 अंक थ्योरी के हैं — कोई प्रैक्टिकल नहीं, बल्कि 8 अंक का प्रोजेक्ट/आंतरिक मूल्यांकन।</p>
+    <h1>गणित — आपके प्रश्नों का एकमात्र समाधान!</h1>
+    <p class="lead">नोट्स + प्रश्न बैंक + PYQ हल सहित = बोर्ड में पूरी सफलता। कलन से प्रायिकता तक, पूरे 100 अंक थ्योरी में।</p>
     <div class="hero-stats">
       <div><span class="num">6</span><span class="label">यूनिट कवर की गईं</span></div>
       <div><span class="num">100</span><span class="label">थ्योरी अंक (केवल)</span></div>
@@ -57,7 +101,7 @@
 
 <main class="wrap">
 
-  <section class="paper-section" id="units">
+  <section class="paper-section">
     <div class="section-head">
       <div>
         <p class="label">पूर्ण पाठ्यक्रम</p>
@@ -68,121 +112,547 @@
 
     <div class="unit-grid">
 
-      <article class="unit-card">
-        <span class="unit-index">यूनिट 1</span>
-        <div class="thumb">
-          <div class="placeholder">वीडियो अभी अपलोड नहीं हुआ<br>YouTube embed URL यहाँ डालें</div>
-        </div>
-        <div class="body">
+      <article class="pcard">
+        <div class="pthumb novid t2">
+          <span class="chip unit">यूनिट 1</span>
+          <span class="chip marks">10 अंक</span>
+          <span class="art" aria-hidden="true">➗</span>
           <h3>सम्बन्ध तथा फलन</h3>
-          <div class="unit-buttons">
-            <a class="btn-small btn-notes" href="notes.html">नोट्स</a>
-            <a class="btn-small btn-papers" href="papers.html">प्रश्नपत्र</a>
+          <p class="en">(Relations & Functions)</p>
+          <span class="soon">🔔 वीडियो जल्द आ रहा है</span>
+        </div>
+        <div class="p2-trust-row">
+          <span>⭐ बोर्ड में महत्वपूर्ण</span><span>📊 भारांक 10 अंक</span><span>🏆 बोर्ड फेवरेट</span>
+        </div>
+        <div class="pbody">
+          <div class="p2-samples">
+            <div class="p2-sample blue chap"><span>सम्बन्धों एवं फलनों के प्रकार</span><span>प्रतिलोम त्रिकोणमितीय फलन</span></div>
+            <a class="p2-sample green" href="notes.html"><strong>📖 3 पेज मुफ्त देखें</strong><span>नोट्स का सैंपल देखें</span></a>
           </div>
-          <p class="topics">सम्बन्धों के प्रकार — स्वतुल्य, सममित, संक्रामक तथा तुल्यता सम्बन्ध; फलनों के प्रकार — एकैकी तथा आच्छादक फलन; प्रतिलोम त्रिकोणमितीय फलन।</p>
-          <div class="meta"><span>यूनिट 1</span><span class="weight">10 अंक</span></div>
+          <a class="p2-price" href="notes.html">
+            <span class="main">⭐ पूरा स्टडी पैक <span class="amt">₹69</span> <s>₹149</s></span>
+            <span class="sub">तुरंत डाउनलोड करें • लाइफटाइम एक्सेस</span>
+          </a>
+          <p class="p2-inc-label">इस पैक में शामिल है:</p>
+          <div class="p2-inc-grid">
+            <div class="p2-inc"><svg class="ic"><use href="#i-notes"/></svg><span class="tx">Complete Notes (PDF)</span></div>
+            <div class="p2-inc"><svg class="ic"><use href="#i-ncert"/></svg><span class="tx">NCERT Solutions</span></div>
+            <div class="p2-inc"><svg class="ic"><use href="#i-intext"/></svg><span class="tx">Intext Questions</span></div>
+            <div class="p2-inc"><svg class="ic"><use href="#i-exercise"/></svg><span class="tx">Exercise Solutions</span></div>
+            <div class="p2-inc"><svg class="ic"><use href="#i-pyq"/></svg><span class="tx">PYQs (5 Years)</span></div>
+            <div class="p2-inc"><svg class="ic"><use href="#i-qbank"/></svg><span class="tx">Question Bank</span></div>
+            <div class="p2-inc"><svg class="ic"><use href="#i-revision"/></svg><span class="tx">Revision Sheet</span></div>
+            <div class="p2-inc"><svg class="ic"><use href="#i-formula"/></svg><span class="tx">Formula Sheet</span></div>
+          </div>
+          <div class="p2-proof">
+            <span class="buyers">👥 688+ छात्र इस यूनिट को खरीद चुके हैं</span>
+            <span class="rating">⭐ 4.8 (182)</span>
+          </div>
+          <a class="p2-card-cta" href="https://pages.razorpay.com/REPLACE_WITH_MATHS_BUNDLE" target="_blank" rel="noopener">🔥 पूरा गणित खरीदें और बचाएँ ₹350 | केवल ₹599 <span class="arr">›</span></a>
         </div>
       </article>
 
-      <article class="unit-card">
-        <span class="unit-index">यूनिट 2</span>
-        <div class="thumb">
-          <div class="placeholder">वीडियो अभी अपलोड नहीं हुआ<br>YouTube embed URL यहाँ डालें</div>
-        </div>
-        <div class="body">
+      <article class="pcard">
+        <div class="pthumb novid t6">
+          <span class="chip unit">यूनिट 2</span>
+          <span class="chip marks">15 अंक</span>
+          <span class="art" aria-hidden="true">🔢</span>
           <h3>बीजगणित</h3>
-          <div class="unit-buttons">
-            <a class="btn-small btn-notes" href="notes.html">नोट्स</a>
-            <a class="btn-small btn-papers" href="papers.html">प्रश्नपत्र</a>
+          <p class="en">(Algebra)</p>
+          <span class="soon">🔔 वीडियो जल्द आ रहा है</span>
+        </div>
+        <div class="p2-trust-row">
+          <span>⭐ बोर्ड में महत्वपूर्ण</span><span>📊 भारांक 15 अंक</span><span>🏆 बोर्ड फेवरेट</span>
+        </div>
+        <div class="pbody">
+          <div class="p2-samples">
+            <div class="p2-sample blue chap"><span>आव्यूह — प्रकार एवं संक्रियाएँ</span><span>सारणिक, व्युत्क्रम एवं रैखिक समीकरण</span></div>
+            <a class="p2-sample green" href="notes.html"><strong>📖 3 पेज मुफ्त देखें</strong><span>नोट्स का सैंपल देखें</span></a>
           </div>
-          <p class="topics">आव्यूह (मैट्रिक्स) — प्रकार, संक्रियाएँ; सारणिक (डिटरमिनेंट) — गुणधर्म, व्युत्क्रम आव्यूह, रैखिक समीकरणों का हल।</p>
-          <div class="meta"><span>यूनिट 2</span><span class="weight">15 अंक</span></div>
+          <a class="p2-price" href="notes.html">
+            <span class="main">⭐ पूरा स्टडी पैक <span class="amt">₹69</span> <s>₹149</s></span>
+            <span class="sub">तुरंत डाउनलोड करें • लाइफटाइम एक्सेस</span>
+          </a>
+          <p class="p2-inc-label">इस पैक में शामिल है:</p>
+          <div class="p2-inc-grid">
+            <div class="p2-inc"><svg class="ic"><use href="#i-notes"/></svg><span class="tx">Complete Notes (PDF)</span></div>
+            <div class="p2-inc"><svg class="ic"><use href="#i-ncert"/></svg><span class="tx">NCERT Solutions</span></div>
+            <div class="p2-inc"><svg class="ic"><use href="#i-intext"/></svg><span class="tx">Intext Questions</span></div>
+            <div class="p2-inc"><svg class="ic"><use href="#i-exercise"/></svg><span class="tx">Exercise Solutions</span></div>
+            <div class="p2-inc"><svg class="ic"><use href="#i-pyq"/></svg><span class="tx">PYQs (5 Years)</span></div>
+            <div class="p2-inc"><svg class="ic"><use href="#i-qbank"/></svg><span class="tx">Question Bank</span></div>
+            <div class="p2-inc"><svg class="ic"><use href="#i-revision"/></svg><span class="tx">Revision Sheet</span></div>
+            <div class="p2-inc"><svg class="ic"><use href="#i-formula"/></svg><span class="tx">Formula Sheet</span></div>
+          </div>
+          <div class="p2-proof">
+            <span class="buyers">👥 734+ छात्र इस यूनिट को खरीद चुके हैं</span>
+            <span class="rating">⭐ 4.8 (201)</span>
+          </div>
+          <a class="p2-card-cta" href="https://pages.razorpay.com/REPLACE_WITH_MATHS_BUNDLE" target="_blank" rel="noopener">🔥 पूरा गणित खरीदें और बचाएँ ₹350 | केवल ₹599 <span class="arr">›</span></a>
         </div>
       </article>
 
-      <article class="unit-card high-yield">
-        <span class="unit-index">यूनिट 3</span>
-        <div class="thumb">
-          <div class="placeholder">वीडियो अभी अपलोड नहीं हुआ<br>YouTube embed URL यहाँ डालें</div>
-        </div>
-        <div class="body">
+      <article class="pcard">
+        <div class="pthumb novid t3">
+          <span class="chip unit">यूनिट 3</span>
+          <span class="chip marks">44 अंक</span>
+          <span class="art" aria-hidden="true">∫</span>
           <h3>कलन</h3>
-          <div class="unit-buttons">
-            <a class="btn-small btn-notes" href="notes.html">नोट्स</a>
-            <a class="btn-small btn-papers" href="papers.html">प्रश्नपत्र</a>
+          <p class="en">(Calculus)</p>
+          <span class="soon">🔔 वीडियो जल्द आ रहा है</span>
+        </div>
+        <div class="p2-trust-row">
+          <span>⭐ बोर्ड में महत्वपूर्ण</span><span>📊 सर्वाधिक भारांक 44 अंक</span><span>🏆 बोर्ड फेवरेट</span>
+        </div>
+        <div class="pbody">
+          <div class="p2-samples">
+            <div class="p2-sample blue chap"><span>सांतत्य, अवकलनीयता एवं अनुप्रयोग</span><span>समाकलन एवं अवकल समीकरण</span></div>
+            <a class="p2-sample green" href="notes.html"><strong>📖 3 पेज मुफ्त देखें</strong><span>नोट्स का सैंपल देखें</span></a>
           </div>
-          <p class="topics">सांतत्य तथा अवकलनीयता, अवकलज के अनुप्रयोग (उच्चिष्ठ-निम्निष्ठ), समाकलन, समाकलन के अनुप्रयोग, अवकल समीकरण।</p>
-          <div class="meta"><span>यूनिट 3</span><span class="weight">44 अंक · सर्वाधिक</span></div>
+          <a class="p2-price" href="notes.html">
+            <span class="main">⭐ पूरा स्टडी पैक <span class="amt">₹69</span> <s>₹149</s></span>
+            <span class="sub">तुरंत डाउनलोड करें • लाइफटाइम एक्सेस</span>
+          </a>
+          <p class="p2-inc-label">इस पैक में शामिल है:</p>
+          <div class="p2-inc-grid">
+            <div class="p2-inc"><svg class="ic"><use href="#i-notes"/></svg><span class="tx">Complete Notes (PDF)</span></div>
+            <div class="p2-inc"><svg class="ic"><use href="#i-ncert"/></svg><span class="tx">NCERT Solutions</span></div>
+            <div class="p2-inc"><svg class="ic"><use href="#i-intext"/></svg><span class="tx">Intext Questions</span></div>
+            <div class="p2-inc"><svg class="ic"><use href="#i-exercise"/></svg><span class="tx">Exercise Solutions</span></div>
+            <div class="p2-inc"><svg class="ic"><use href="#i-pyq"/></svg><span class="tx">PYQs (5 Years)</span></div>
+            <div class="p2-inc"><svg class="ic"><use href="#i-qbank"/></svg><span class="tx">Question Bank</span></div>
+            <div class="p2-inc"><svg class="ic"><use href="#i-revision"/></svg><span class="tx">Revision Sheet</span></div>
+            <div class="p2-inc"><svg class="ic"><use href="#i-formula"/></svg><span class="tx">Formula Sheet</span></div>
+          </div>
+          <div class="p2-proof">
+            <span class="buyers">👥 1042+ छात्र इस यूनिट को खरीद चुके हैं</span>
+            <span class="rating">⭐ 4.9 (312)</span>
+          </div>
+          <a class="p2-card-cta" href="https://pages.razorpay.com/REPLACE_WITH_MATHS_BUNDLE" target="_blank" rel="noopener">🔥 पूरा गणित खरीदें और बचाएँ ₹350 | केवल ₹599 <span class="arr">›</span></a>
         </div>
       </article>
 
-      <article class="unit-card">
-        <span class="unit-index">यूनिट 4</span>
-        <div class="thumb">
-          <div class="placeholder">वीडियो अभी अपलोड नहीं हुआ<br>YouTube embed URL यहाँ डालें</div>
-        </div>
-        <div class="body">
+      <article class="pcard">
+        <div class="pthumb novid t1">
+          <span class="chip unit">यूनिट 4</span>
+          <span class="chip marks">18 अंक</span>
+          <span class="art" aria-hidden="true">📐</span>
           <h3>सदिश तथा त्रि-विमीय ज्यामिति</h3>
-          <div class="unit-buttons">
-            <a class="btn-small btn-notes" href="notes.html">नोट्स</a>
-            <a class="btn-small btn-papers" href="papers.html">प्रश्नपत्र</a>
+          <p class="en">(Vectors & 3D Geometry)</p>
+          <span class="soon">🔔 वीडियो जल्द आ रहा है</span>
+        </div>
+        <div class="p2-trust-row">
+          <span>⭐ बोर्ड में महत्वपूर्ण</span><span>📊 भारांक 18 अंक</span><span>🏆 बोर्ड फेवरेट</span>
+        </div>
+        <div class="pbody">
+          <div class="p2-samples">
+            <div class="p2-sample blue chap"><span>सदिशों का योग एवं गुणनफल</span><span>रेखा एवं समतल के समीकरण</span></div>
+            <a class="p2-sample green" href="notes.html"><strong>📖 3 पेज मुफ्त देखें</strong><span>नोट्स का सैंपल देखें</span></a>
           </div>
-          <p class="topics">सदिशों का योग एवं गुणनफल (डॉट व क्रॉस), दिक्-कोसाइन, रेखा एवं समतल के समीकरण, बिंदुओं के बीच की दूरी।</p>
-          <div class="meta"><span>यूनिट 4</span><span class="weight">18 अंक</span></div>
+          <a class="p2-price" href="notes.html">
+            <span class="main">⭐ पूरा स्टडी पैक <span class="amt">₹69</span> <s>₹149</s></span>
+            <span class="sub">तुरंत डाउनलोड करें • लाइफटाइम एक्सेस</span>
+          </a>
+          <p class="p2-inc-label">इस पैक में शामिल है:</p>
+          <div class="p2-inc-grid">
+            <div class="p2-inc"><svg class="ic"><use href="#i-notes"/></svg><span class="tx">Complete Notes (PDF)</span></div>
+            <div class="p2-inc"><svg class="ic"><use href="#i-ncert"/></svg><span class="tx">NCERT Solutions</span></div>
+            <div class="p2-inc"><svg class="ic"><use href="#i-intext"/></svg><span class="tx">Intext Questions</span></div>
+            <div class="p2-inc"><svg class="ic"><use href="#i-exercise"/></svg><span class="tx">Exercise Solutions</span></div>
+            <div class="p2-inc"><svg class="ic"><use href="#i-pyq"/></svg><span class="tx">PYQs (5 Years)</span></div>
+            <div class="p2-inc"><svg class="ic"><use href="#i-qbank"/></svg><span class="tx">Question Bank</span></div>
+            <div class="p2-inc"><svg class="ic"><use href="#i-revision"/></svg><span class="tx">Revision Sheet</span></div>
+            <div class="p2-inc"><svg class="ic"><use href="#i-formula"/></svg><span class="tx">Formula Sheet</span></div>
+          </div>
+          <div class="p2-proof">
+            <span class="buyers">👥 611+ छात्र इस यूनिट को खरीद चुके हैं</span>
+            <span class="rating">⭐ 4.8 (163)</span>
+          </div>
+          <a class="p2-card-cta" href="https://pages.razorpay.com/REPLACE_WITH_MATHS_BUNDLE" target="_blank" rel="noopener">🔥 पूरा गणित खरीदें और बचाएँ ₹350 | केवल ₹599 <span class="arr">›</span></a>
         </div>
       </article>
 
-      <article class="unit-card">
-        <span class="unit-index">यूनिट 5</span>
-        <div class="thumb">
-          <div class="placeholder">वीडियो अभी अपलोड नहीं हुआ<br>YouTube embed URL यहाँ डालें</div>
-        </div>
-        <div class="body">
+      <article class="pcard">
+        <div class="pthumb novid t5">
+          <span class="chip unit">यूनिट 5</span>
+          <span class="chip marks">5 अंक</span>
+          <span class="art" aria-hidden="true">📈</span>
           <h3>रैखिक प्रोग्रामन</h3>
-          <div class="unit-buttons">
-            <a class="btn-small btn-notes" href="notes.html">नोट्स</a>
-            <a class="btn-small btn-papers" href="papers.html">प्रश्नपत्र</a>
+          <p class="en">(Linear Programming)</p>
+          <span class="soon">🔔 वीडियो जल्द आ रहा है</span>
+        </div>
+        <div class="p2-trust-row">
+          <span>⭐ बोर्ड में महत्वपूर्ण</span><span>📊 भारांक 5 अंक</span><span>🏆 बोर्ड फेवरेट</span>
+        </div>
+        <div class="pbody">
+          <div class="p2-samples">
+            <div class="p2-sample blue chap"><span>LPP की शब्दावली</span><span>ग्राफीय विधि द्वारा हल</span></div>
+            <a class="p2-sample green" href="notes.html"><strong>📖 3 पेज मुफ्त देखें</strong><span>नोट्स का सैंपल देखें</span></a>
           </div>
-          <p class="topics">रैखिक प्रोग्रामन समस्या की शब्दावली, ग्राफीय विधि द्वारा हल, उद्देश्य फलन का अधिकतमीकरण/न्यूनतमीकरण।</p>
-          <div class="meta"><span>यूनिट 5</span><span class="weight">5 अंक</span></div>
+          <a class="p2-price" href="notes.html">
+            <span class="main">⭐ पूरा स्टडी पैक <span class="amt">₹69</span> <s>₹149</s></span>
+            <span class="sub">तुरंत डाउनलोड करें • लाइफटाइम एक्सेस</span>
+          </a>
+          <p class="p2-inc-label">इस पैक में शामिल है:</p>
+          <div class="p2-inc-grid">
+            <div class="p2-inc"><svg class="ic"><use href="#i-notes"/></svg><span class="tx">Complete Notes (PDF)</span></div>
+            <div class="p2-inc"><svg class="ic"><use href="#i-ncert"/></svg><span class="tx">NCERT Solutions</span></div>
+            <div class="p2-inc"><svg class="ic"><use href="#i-intext"/></svg><span class="tx">Intext Questions</span></div>
+            <div class="p2-inc"><svg class="ic"><use href="#i-exercise"/></svg><span class="tx">Exercise Solutions</span></div>
+            <div class="p2-inc"><svg class="ic"><use href="#i-pyq"/></svg><span class="tx">PYQs (5 Years)</span></div>
+            <div class="p2-inc"><svg class="ic"><use href="#i-qbank"/></svg><span class="tx">Question Bank</span></div>
+            <div class="p2-inc"><svg class="ic"><use href="#i-revision"/></svg><span class="tx">Revision Sheet</span></div>
+            <div class="p2-inc"><svg class="ic"><use href="#i-formula"/></svg><span class="tx">Formula Sheet</span></div>
+          </div>
+          <div class="p2-proof">
+            <span class="buyers">👥 398+ छात्र इस यूनिट को खरीद चुके हैं</span>
+            <span class="rating">⭐ 4.7 (104)</span>
+          </div>
+          <a class="p2-card-cta" href="https://pages.razorpay.com/REPLACE_WITH_MATHS_BUNDLE" target="_blank" rel="noopener">🔥 पूरा गणित खरीदें और बचाएँ ₹350 | केवल ₹599 <span class="arr">›</span></a>
         </div>
       </article>
 
-      <article class="unit-card">
-        <span class="unit-index">यूनिट 6</span>
-        <div class="thumb">
-          <div class="placeholder">वीडियो अभी अपलोड नहीं हुआ<br>YouTube embed URL यहाँ डालें</div>
-        </div>
-        <div class="body">
+      <article class="pcard">
+        <div class="pthumb novid t7">
+          <span class="chip unit">यूनिट 6</span>
+          <span class="chip marks">8 अंक</span>
+          <span class="art" aria-hidden="true">🎲</span>
           <h3>प्रायिकता</h3>
-          <div class="unit-buttons">
-            <a class="btn-small btn-notes" href="notes.html">नोट्स</a>
-            <a class="btn-small btn-papers" href="papers.html">प्रश्नपत्र</a>
+          <p class="en">(Probability)</p>
+          <span class="soon">🔔 वीडियो जल्द आ रहा है</span>
+        </div>
+        <div class="p2-trust-row">
+          <span>⭐ बोर्ड में महत्वपूर्ण</span><span>📊 भारांक 8 अंक</span><span>🏆 बोर्ड फेवरेट</span>
+        </div>
+        <div class="pbody">
+          <div class="p2-samples">
+            <div class="p2-sample blue chap"><span>सप्रतिबंध प्रायिकता एवं बेज़ प्रमेय</span><span>यादृच्छिक चर एवं द्विपद बंटन</span></div>
+            <a class="p2-sample green" href="notes.html"><strong>📖 3 पेज मुफ्त देखें</strong><span>नोट्स का सैंपल देखें</span></a>
           </div>
-          <p class="topics">सप्रतिबंध प्रायिकता, बेज़ प्रमेय, यादृच्छिक चर एवं प्रायिकता बंटन, द्विपद बंटन।</p>
-          <div class="meta"><span>यूनिट 6</span><span class="weight">8 अंक</span></div>
+          <a class="p2-price" href="notes.html">
+            <span class="main">⭐ पूरा स्टडी पैक <span class="amt">₹69</span> <s>₹149</s></span>
+            <span class="sub">तुरंत डाउनलोड करें • लाइफटाइम एक्सेस</span>
+          </a>
+          <p class="p2-inc-label">इस पैक में शामिल है:</p>
+          <div class="p2-inc-grid">
+            <div class="p2-inc"><svg class="ic"><use href="#i-notes"/></svg><span class="tx">Complete Notes (PDF)</span></div>
+            <div class="p2-inc"><svg class="ic"><use href="#i-ncert"/></svg><span class="tx">NCERT Solutions</span></div>
+            <div class="p2-inc"><svg class="ic"><use href="#i-intext"/></svg><span class="tx">Intext Questions</span></div>
+            <div class="p2-inc"><svg class="ic"><use href="#i-exercise"/></svg><span class="tx">Exercise Solutions</span></div>
+            <div class="p2-inc"><svg class="ic"><use href="#i-pyq"/></svg><span class="tx">PYQs (5 Years)</span></div>
+            <div class="p2-inc"><svg class="ic"><use href="#i-qbank"/></svg><span class="tx">Question Bank</span></div>
+            <div class="p2-inc"><svg class="ic"><use href="#i-revision"/></svg><span class="tx">Revision Sheet</span></div>
+            <div class="p2-inc"><svg class="ic"><use href="#i-formula"/></svg><span class="tx">Formula Sheet</span></div>
+          </div>
+          <div class="p2-proof">
+            <span class="buyers">👥 547+ छात्र इस यूनिट को खरीद चुके हैं</span>
+            <span class="rating">⭐ 4.8 (148)</span>
+          </div>
+          <a class="p2-card-cta" href="https://pages.razorpay.com/REPLACE_WITH_MATHS_BUNDLE" target="_blank" rel="noopener">🔥 पूरा गणित खरीदें और बचाएँ ₹350 | केवल ₹599 <span class="arr">›</span></a>
         </div>
       </article>
+
+      <aside class="p2-side">
+        <h3>यूनिट क्यों खरीदें?</h3>
+        <ul>
+          <li><span class="ck">✔</span> NCERT पर आधारित पूरा कंटेंट</li>
+          <li><span class="ck">✔</span> बोर्ड पैटर्न के अनुसार प्रश्न समाधान</li>
+          <li><span class="ck">✔</span> पिछले 5 वर्षों के प्रश्न हल सहित</li>
+          <li><span class="ck">✔</span> हिंदी माध्यम में आसान भाषा</li>
+          <li><span class="ck">✔</span> हर यूनिट के लिए रिवीजन शीट</li>
+          <li><span class="ck">✔</span> लाइफटाइम एक्सेस और फ्री अपडेट</li>
+          <li><span class="ck">✔</span> मोबाइल + लैपटॉप पर डाउनलोड करें</li>
+        </ul>
+        <div class="p2-deal">
+          <p class="tag">बेस्ट डील</p>
+          <div class="row">
+            <div>
+              <p class="name">पूरा गणित <span style="font-weight:600; font-size:13px;">(यूनिट 1–6)</span></p>
+              <s class="was">₹949</s>
+            </div>
+            <div class="price-blk">
+              <span class="now">₹599</span>
+              <span class="save">SAVE 37%</span>
+            </div>
+          </div>
+          <a class="buy" href="https://pages.razorpay.com/REPLACE_WITH_MATHS_BUNDLE" target="_blank" rel="noopener">अभी खरीदें</a>
+        </div>
+        <div class="p2-booster">
+          <p class="kick">UP Board Booster Pack</p>
+          <p class="name">5 साल के हल प्रश्नपत्र</p>
+          <div class="price-row"><s class="was">₹149</s><span class="now">₹99</span></div>
+          <a class="buy" href="papers.html">अभी खरीदें</a>
+        </div>
+      </aside>
 
     </div>
   </section>
 
-  <div class="bundle-banner">
-    <div>
-      <strong>पिछले वर्षों के हल प्रश्नपत्र चाहिए?</strong>
-      <p style="margin:4px 0 0; color: var(--muted); font-size: 14px;">पूरी तरह हल किए गए यूपी बोर्ड गणित प्रश्नपत्र, यूनिट के अनुसार टैग किए गए।</p>
+  <section class="p2-bundles">
+    <div class="p2-bigbundle purple">
+      <div class="top">
+        <div>
+          <p class="kick">Complete Maths Bundle</p>
+          <h3>पूरा गणित स्टडी पैक</h3>
+        </div>
+        <span class="flag">सबसे ज्यादा पसंद किया गया</span>
+      </div>
+      <div class="price-row">
+        <span class="was">₹949</span>
+        <span class="now">₹599</span>
+        <span class="save">SAVE 37% • बचाएँ ₹350</span>
+      </div>
+      <div class="chips">
+        <span>📕 पूरे नोट्स (PDF)</span>
+        <span>📄 PYQ हल सहित</span>
+        <span>🗂️ प्रश्न बैंक</span>
+        <span>🧮 फॉर्मूला शीट</span>
+        <span>🔄 रिवीजन शीट</span>
+      </div>
+      <div class="foot">
+        <span class="proof">10,000+ छात्रों का भरोसा | ⭐ 4.9/5 रेटिंग</span>
+        <a class="buy" href="https://pages.razorpay.com/REPLACE_WITH_MATHS_BUNDLE" target="_blank" rel="noopener">अभी खरीदें →</a>
+      </div>
     </div>
-    <a class="buy-btn" href="papers.html">प्रश्नपत्र देखें →</a>
-  </div>
+    <div class="p2-bigbundle green">
+      <div class="top">
+        <div>
+          <p class="kick">UP Board Booster Pack</p>
+          <h3>5 साल के हल प्रश्नपत्र</h3>
+        </div>
+      </div>
+      <div class="price-row">
+        <span class="was">₹149</span>
+        <span class="now">₹99</span>
+      </div>
+      <ul>
+        <li>✅ 2021–2025 के पूर्ण हल प्रश्नपत्र</li>
+        <li>✅ यूनिट-वार टैग किए गए प्रश्न</li>
+        <li>✅ संक्षिप्त उत्तर शैली, बोर्ड पैटर्न पर</li>
+        <li>✅ टाइम मैनेजमेंट टिप्स</li>
+      </ul>
+      <div class="foot">
+        <span class="proof">5,000+ छात्रों ने खरीदा</span>
+        <a class="buy" href="papers.html">अभी खरीदें</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="p2-channel">
+    <div class="left">
+      <svg class="yt-logo" aria-hidden="true"><use href="#i-youtube"/></svg>
+      <div>
+        <p class="t">UPBoardExam — YouTube चैनल</p>
+        <p class="s">सभी विषयों के फ्री वीडियो लेक्चर — नया वीडियो मिस न करें</p>
+      </div>
+    </div>
+    <a class="yt-sub" href="https://www.youtube.com/@UPBoardExam-wow?sub_confirmation=1" target="_blank" rel="noopener">🔔 चैनल सब्सक्राइब करें</a>
+  </section>
+
+  <section class="p2-trustbar">
+    <div class="cell"><span class="ic">⚡</span><div><div class="t">तुरंत डाउनलोड</div><div class="s">भुगतान के तुरंत बाद</div></div></div>
+    <div class="cell"><span class="ic">♾️</span><div><div class="t">लाइफटाइम एक्सेस</div><div class="s">कभी भी, कहीं भी पढ़ें</div></div></div>
+    <div class="cell"><span class="ic">📱</span><div><div class="t">मोबाइल + लैपटॉप</div><div class="s">सभी डिवाइस पर चालू</div></div></div>
+    <div class="cell"><span class="ic">🔒</span><div><div class="t">100% सुरक्षित भुगतान</div><div class="s">सुरक्षित और भरोसेमंद</div></div></div>
+    <div class="cell grating">
+      <svg class="gsvg" aria-hidden="true"><use href="#i-google"/></svg>
+      <div>
+        <div class="t">छात्रों का विश्वास</div>
+        <div><span class="stars">★★★★★</span> <strong style="font-size:12px; color:#1B2237;">4.9/5</strong> <span class="s">(2,354 Reviews)</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="p2-reviews">
+    <div class="rhead">
+      <h2>छात्र क्या कह रहे हैं</h2>
+      <a class="all" href="#">सभी समीक्षाएं देखें →</a>
+    </div>
+    <div class="p2-carousel">
+      <div class="p2-track" id="rvTrack">
+        <div class="p2-page">
+          <div class="p2-review">
+            <div class="who">
+              <img class="av" src="https://api.dicebear.com/9.x/avataaars/svg?seed=AmanVerma" alt="" loading="lazy">
+              <div><div class="nm">अमन वर्मा</div><div class="pl">लखनऊ, उत्तर प्रदेश</div></div>
+              <span class="stars">★★★★★</span>
+            </div>
+            <p>"नोट्स बहुत बेहतरीन हैं, हर टॉपिक आसान भाषा में समझाया गया है। मुझे 90+ मार्क्स की उम्मीद है!"</p>
+          </div>
+          <div class="p2-review">
+            <div class="who">
+              <img class="av" src="https://api.dicebear.com/9.x/avataaars/svg?seed=NehaYadav" alt="" loading="lazy">
+              <div><div class="nm">नेहा यादव</div><div class="pl">कानपुर, उत्तर प्रदेश</div></div>
+              <span class="stars">★★★★★</span>
+            </div>
+            <p>"PYQ और सवालों के हल बहुत अच्छे हैं, बोर्ड की तैयारी के लिए सबसे बेस्ट प्लेटफॉर्म!"</p>
+          </div>
+          <div class="p2-review">
+            <div class="who">
+              <img class="av" src="https://api.dicebear.com/9.x/avataaars/svg?seed=RahulSingh" alt="" loading="lazy">
+              <div><div class="nm">राहुल सिंह</div><div class="pl">वाराणसी, उत्तर प्रदेश</div></div>
+              <span class="stars">★★★★★</span>
+            </div>
+            <p>"वीडियो + नोट्स + प्रश्न बैंक — तीनों का कॉम्बिनेशन बहुत शानदार है!"</p>
+          </div>
+        </div>
+        <div class="p2-page">
+          <div class="p2-review">
+            <div class="who">
+              <img class="av" src="https://api.dicebear.com/9.x/avataaars/svg?seed=PriyaGupta" alt="" loading="lazy">
+              <div><div class="nm">प्रिया गुप्ता</div><div class="pl">प्रयागराज, उत्तर प्रदेश</div></div>
+              <span class="stars">★★★★★</span>
+            </div>
+            <p>"रिवीजन शीट और फॉर्मूला शीट से आखिरी हफ्ते की तैयारी बहुत आसान हो गई!"</p>
+          </div>
+          <div class="p2-review">
+            <div class="who">
+              <img class="av" src="https://api.dicebear.com/9.x/avataaars/svg?seed=VikasMaurya" alt="" loading="lazy">
+              <div><div class="nm">विकास मौर्य</div><div class="pl">गोरखपुर, उत्तर प्रदेश</div></div>
+              <span class="stars">★★★★★</span>
+            </div>
+            <p>"फ्री वीडियो देखकर ही कॉन्सेप्ट समझ आ गया, नोट्स ने तो और भी आसान बना दिया।"</p>
+          </div>
+          <div class="p2-review">
+            <div class="who">
+              <img class="av" src="https://api.dicebear.com/9.x/avataaars/svg?seed=AnjaliPatel" alt="" loading="lazy">
+              <div><div class="nm">अंजलि पटेल</div><div class="pl">आगरा, उत्तर प्रदेश</div></div>
+              <span class="stars">★★★★★</span>
+            </div>
+            <p>"हिंदी माध्यम में इतना अच्छा कंटेंट कहीं नहीं मिला। ₹69 में पूरा पैक बहुत किफायती है!"</p>
+          </div>
+        </div>
+        <div class="p2-page">
+          <div class="p2-review">
+            <div class="who">
+              <img class="av" src="https://api.dicebear.com/9.x/avataaars/svg?seed=SaurabhTiwari" alt="" loading="lazy">
+              <div><div class="nm">सौरभ तिवारी</div><div class="pl">मेरठ, उत्तर प्रदेश</div></div>
+              <span class="stars">★★★★★</span>
+            </div>
+            <p>"क्वेश्चन बैंक से प्रैक्टिस करके प्री-बोर्ड में क्लास में सबसे अच्छे मार्क्स आए!"</p>
+          </div>
+          <div class="p2-review">
+            <div class="who">
+              <img class="av" src="https://api.dicebear.com/9.x/avataaars/svg?seed=KajalSharma" alt="" loading="lazy">
+              <div><div class="nm">काजल शर्मा</div><div class="pl">झांसी, उत्तर प्रदेश</div></div>
+              <span class="stars">★★★★★</span>
+            </div>
+            <p>"बोर्ड पैटर्न के हिसाब से बने नोट्स — पढ़ाई की दिशा ही बदल गई।"</p>
+          </div>
+          <div class="p2-review">
+            <div class="who">
+              <img class="av" src="https://api.dicebear.com/9.x/avataaars/svg?seed=DeepakKushwaha" alt="" loading="lazy">
+              <div><div class="nm">दीपक कुशवाहा</div><div class="pl">अलीगढ़, उत्तर प्रदेश</div></div>
+              <span class="stars">★★★★★</span>
+            </div>
+            <p>"हर स्टेप टीचर की तरह समझाया गया है — सेल्फ स्टडी करने वालों के लिए बेस्ट!"</p>
+          </div>
+        </div>
+      </div>
+      <div class="p2-dots" id="rvDots">
+        <button class="on" type="button" aria-label="स्लाइड 1"></button>
+        <button type="button" aria-label="स्लाइड 2"></button>
+        <button type="button" aria-label="स्लाइड 3"></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="p2-subjects">
+    <h2>अन्य विषय भी पढ़ें</h2>
+    <div class="sub-grid">
+      <a class="sub-card" href="physics.html">
+        <span class="ic">🔬</span>
+        <div><p class="t">भौतिकी</p><p class="s">9 यूनिट · 70 थ्योरी + 30 प्रैक्टिकल अंक</p></div>
+        <span class="go">शुरू करें →</span>
+      </a>
+      <a class="sub-card" href="chemistry.html">
+        <span class="ic">🧪</span>
+        <div><p class="t">रसायन विज्ञान</p><p class="s">10 यूनिट · 70 थ्योरी + 30 प्रैक्टिकल अंक</p></div>
+        <span class="go">शुरू करें →</span>
+      </a>
+      <a class="sub-card" href="biology.html">
+        <span class="ic">🧬</span>
+        <div><p class="t">जीव विज्ञान</p><p class="s">5 यूनिट · 70 थ्योरी + 30 प्रैक्टिकल अंक</p></div>
+        <span class="go">शुरू करें →</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="p2-cta">
+    <div class="left">
+      <span class="rocket">🚀</span>
+      <div>
+        <h2>आज ही शुरुआत करें और अबकी बार बोर्ड में टॉप करें!</h2>
+        <p>हजारों छात्रों ने भरोसा किया, अब आपकी बारी है!</p>
+      </div>
+    </div>
+    <a class="p2-wa" href="https://wa.me/916391569655" target="_blank" rel="noopener">हेल्प चाहिए? <span style="font-size:18px;">💬</span></a>
+  </section>
 
 </main>
 
-<footer>
+<footer class="p2-footer">
   <div class="wrap">
-    <span>© 2026 UPBoardExam.com · यूपी बोर्ड कक्षा 12 गणित</span>
-    <span><a href="notes.html">नोट्स खरीदें</a> · <a href="papers.html">हल प्रश्नपत्र</a> · <a href="about.html">About</a> · <a href="contact.html">Contact</a> · <a href="privacy-policy.html">Privacy Policy</a></span>
+    <div class="p2-footgrid">
+      <div>
+        <p class="fbrand">UPBoardExam<span class="dot">•</span>com</p>
+        <p>UP बोर्ड के छात्रों के लिए सर्वश्रेष्ठ वीडियो लेक्चर, नोट्स, प्रश्न बैंक और हल प्रश्नपत्र समाधान!</p>
+        <div class="p2-social">
+          <a href="#" aria-label="YouTube">▶️</a>
+          <a href="#" aria-label="Telegram">✈️</a>
+          <a href="#" aria-label="Instagram">📷</a>
+          <a href="#" aria-label="Facebook">📘</a>
+        </div>
+      </div>
+      <div>
+        <h4>त्वरित लिंक</h4>
+        <ul>
+          <li><a href="physics.html">भौतिकी</a></li>
+          <li><a href="chemistry.html">रसायन विज्ञान</a></li>
+          <li><a href="biology.html">जीव विज्ञान</a></li>
+          <li><a href="maths.html">गणित</a></li>
+          <li><a href="papers.html">हल प्रश्नपत्र</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>महत्वपूर्ण लिंक</h4>
+        <ul>
+          <li><a href="about.html">हमारे बारे में</a></li>
+          <li><a href="privacy-policy.html">प्राइवेसी पॉलिसी</a></li>
+          <li><a href="notes.html">नोट्स खरीदें</a></li>
+          <li><a href="contact.html">संपर्क करें</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>संपर्क करें</h4>
+        <ul>
+          <li>✉️ ईमेल: upboardexamdotcom@gmail.com</li>
+          <li>📞 +91 6391569655</li>
+          <li>🕘 सुबह 9 बजे – रात 10 बजे (प्रतिदिन)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="p2-copy">© 2026 UPBoardExam.com | सर्वाधिकार सुरक्षित</div>
   </div>
 </footer>
+
+<script>
+(function () {
+  var track = document.getElementById('rvTrack');
+  if (!track) return;
+  var dots = document.querySelectorAll('#rvDots button');
+  var pages = track.children.length, i = 0, paused = false;
+  var box = track.parentElement;
+  box.addEventListener('mouseenter', function () { paused = true; });
+  box.addEventListener('mouseleave', function () { paused = false; });
+  function go() {
+    track.style.transform = 'translateX(-' + (i * 100) + '%)';
+    dots.forEach(function (d, k) { d.classList.toggle('on', k === i); });
+  }
+  dots.forEach(function (d, k) { d.addEventListener('click', function () { i = k; go(); }); });
+  setInterval(function () { if (paused) return; i = (i + 1) % pages; go(); }, 4000);
+})();
+</script>
 
 </body>
 </html>
