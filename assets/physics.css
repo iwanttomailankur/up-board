@@ -78,6 +78,57 @@
 .watch-btn:active { transform: scale(.97); }
 .pthumb iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; z-index: 5; }
 
+/* per-unit artwork gradients (shown when there is no thumbnail image) */
+.pthumb.t1 { background: radial-gradient(120% 150% at 80% 20%, #3B1D8F 0%, #1B1464 45%, #0B0B2B 100%); }
+.pthumb.t2 { background: radial-gradient(120% 150% at 78% 25%, #1D4ED8 0%, #172554 50%, #090E22 100%); }
+.pthumb.t3 { background: radial-gradient(120% 150% at 80% 22%, #6D28D9 0%, #312E81 48%, #0D0A28 100%); }
+.pthumb.t4 { background: radial-gradient(120% 150% at 80% 22%, #B45309 0%, #7C2D12 48%, #1C0A05 100%); }
+.pthumb.t5 { background: radial-gradient(120% 150% at 80% 22%, #0E7490 0%, #164E63 48%, #04121B 100%); }
+.pthumb.t6 { background: radial-gradient(120% 150% at 80% 22%, #1E40AF 0%, #1E3A8A 48%, #060B1E 100%); }
+.pthumb.t7 { background: radial-gradient(120% 150% at 80% 22%, #7C3AED 0%, #4C1D95 48%, #100826 100%); }
+.pthumb.t8 { background: radial-gradient(120% 150% at 80% 22%, #047857 0%, #064E3B 48%, #03130E 100%); }
+.pthumb.t9 { background: radial-gradient(120% 150% at 80% 22%, #0891B2 0%, #155E75 48%, #041318 100%); }
+.pthumb.t10 { background: radial-gradient(120% 150% at 80% 22%, #9D174D 0%, #831843 48%, #2A0716 100%); }
+
+/* placeholder thumbnail (subject has no video yet): show title + art, "video soon" chip */
+.pthumb.novid { justify-content: center; align-items: center; text-align: center; padding: 16px; }
+.pthumb.novid .art {
+  position: absolute; right: auto; left: 50%; top: 26%; transform: translate(-50%, -50%);
+  font-size: 76px; opacity: .3;
+}
+.pthumb.novid h3 {
+  position: static; width: auto; height: auto; margin: 26px 0 0; clip: auto; overflow: visible; white-space: normal;
+  color: #fff; font-family: var(--font-display); font-size: 19px; font-weight: 800; line-height: 1.25;
+  z-index: 1; text-shadow: 0 2px 10px rgba(0,0,0,.5); max-width: 100%;
+}
+.pthumb.novid .en {
+  position: static; width: auto; height: auto; margin: 2px 0 10px; clip: auto; overflow: visible; white-space: normal;
+  color: #D8DEED; font-size: 13px; font-weight: 600; z-index: 1;
+}
+.pthumb.novid .soon {
+  z-index: 1;
+  display: inline-flex; align-items: center; gap: 6px;
+  background: rgba(255,255,255,.14); border: 1px solid rgba(255,255,255,.3);
+  color: #fff; font-size: 11.5px; font-weight: 800; padding: 6px 14px; border-radius: 999px;
+}
+
+/* channel subscribe banner (subjects without a playlist embed) */
+.p2-channel {
+  display: flex; align-items: center; justify-content: space-between; gap: 18px; flex-wrap: wrap;
+  background: #FFFFFF; border: 1px solid var(--line, #E6DFCF); border-radius: 16px;
+  padding: 18px 22px; margin-bottom: 28px;
+  box-shadow: var(--shadow, 0 10px 30px -12px rgba(20, 24, 31, 0.18));
+}
+.p2-channel .left { display: flex; align-items: center; gap: 14px; }
+.p2-channel .yt-logo { width: 40px; height: 40px; flex: none; }
+.p2-channel .t { color: var(--navy, #14181F); font-family: var(--font-display); font-size: 17px; font-weight: 800; margin: 0; }
+.p2-channel .s { color: var(--muted, #6B7280); font-size: 13px; margin: 2px 0 0; }
+.p2-channel .yt-sub {
+  background: #FF0000; color: #fff; font-size: 14px; font-weight: 800;
+  border-radius: 9px; padding: 12px 22px; white-space: nowrap; transition: filter .15s ease;
+}
+.p2-channel .yt-sub:hover { filter: brightness(.9); }
+
 /* --- trust row --- */
 .p2-trust-row {
   display: flex;
@@ -378,6 +429,49 @@
 .p2-review .pl { color: var(--muted, #6B7280); font-size: 12px; }
 .p2-review .stars { color: var(--amber, #E8A33D); font-size: 13px; letter-spacing: 1.5px; margin-left: auto; }
 .p2-review p { color: #4B5568; font-size: 13.5px; line-height: 1.65; margin: 0; font-style: italic; }
+
+/* ============================================================
+   HOMEPAGE — big subject cards
+   ============================================================ */
+.home-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; margin-bottom: 28px; }
+.home-subj {
+  position: relative; overflow: hidden;
+  display: flex; flex-direction: column;
+  background: #FFFFFF; border: 1px solid var(--line, #E6DFCF); border-radius: 18px;
+  box-shadow: var(--shadow, 0 10px 30px -12px rgba(20, 24, 31, 0.18));
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.home-subj:hover { transform: translateY(-4px); box-shadow: 0 20px 44px -16px rgba(20, 24, 31, 0.3); }
+.home-subj .top {
+  position: relative; padding: 22px 24px; color: #fff; overflow: hidden;
+  display: flex; align-items: center; gap: 16px;
+}
+.home-subj .top .art { font-size: 46px; flex: none; filter: drop-shadow(0 3px 6px rgba(0,0,0,.35)); }
+.home-subj .top .nm { font-family: var(--font-display); font-size: 24px; font-weight: 800; margin: 0; }
+.home-subj .top .en { font-size: 13px; font-weight: 600; opacity: .85; margin: 2px 0 0; }
+.home-subj .flag {
+  position: absolute; top: 14px; right: 14px;
+  background: var(--amber, #E8A33D); color: var(--navy, #14181F);
+  font-size: 11px; font-weight: 800; padding: 4px 11px; border-radius: 999px;
+  text-transform: uppercase; letter-spacing: .03em;
+}
+.home-subj .body { padding: 18px 24px 22px; display: flex; flex-direction: column; gap: 14px; flex: 1; }
+.home-subj .stats { display: flex; gap: 20px; }
+.home-subj .stats .k { font-family: var(--font-display); font-size: 20px; font-weight: 800; color: var(--navy, #14181F); }
+.home-subj .stats .l { font-size: 11.5px; color: var(--muted, #6B7280); }
+.home-subj .desc { font-size: 13.5px; color: #4B5568; line-height: 1.6; margin: 0; flex: 1; }
+.home-subj .go {
+  align-self: flex-start;
+  background: var(--amber, #E8A33D); color: var(--navy, #14181F);
+  font-size: 14px; font-weight: 800; padding: 11px 22px; border-radius: 999px;
+  transition: filter .15s ease;
+}
+.home-subj .go:hover { filter: brightness(1.06); }
+.home-subj .top.physics { background: linear-gradient(115deg, #1B1464 0%, #3B1D8F 55%, #1D4ED8 100%); }
+.home-subj .top.chem { background: linear-gradient(115deg, #831843 0%, #9D174D 55%, #BE185D 100%); }
+.home-subj .top.bio { background: linear-gradient(115deg, #064E3B 0%, #047857 55%, #059669 100%); }
+.home-subj .top.maths { background: linear-gradient(115deg, #164E63 0%, #0E7490 55%, #0891B2 100%); }
+@media (max-width: 720px) { .home-grid { grid-template-columns: 1fr; } }
 
 /* ============================================================
    OTHER SUBJECTS
