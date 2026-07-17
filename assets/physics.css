@@ -423,6 +423,50 @@ footer.p2-footer .wrap { display: block; text-align: left; }
   .p2-cta { flex-direction: column; align-items: flex-start; }
 }
 
+/* ============================================================
+   PAGE COMPACTION — vertical rhythm overrides (this page only,
+   since physics.css is linked only on physics.html)
+   ============================================================ */
+.topbar .wrap { padding-top: 10px; padding-bottom: 10px; }
+
+.hero { padding: 30px 0 24px; }
+.hero-eyebrow { margin: 0 0 8px; }
+.hero h1 { margin: 0 0 10px; }
+.hero .lead { margin: 0 0 18px; }
+.hero-stats { gap: 30px; }
+
+main.wrap { padding-top: 24px; padding-bottom: 8px; }
+.paper-section { margin-bottom: 28px; }
+.section-head { margin-bottom: 14px; padding-bottom: 10px; }
+.unit-grid { gap: 18px; }
+
+.p2-side { padding: 18px 16px; }
+.p2-side h3 { margin: 0 0 10px; }
+.p2-side ul { gap: 8px; margin-bottom: 14px; }
+.p2-deal { padding: 13px 14px; }
+.p2-booster { margin-top: 10px; padding: 12px 14px; }
+
+.p2-bundles { gap: 18px; margin-bottom: 28px; }
+.p2-bigbundle { padding: 20px 24px; gap: 10px; }
+.p2-bigbundle .now { font-size: 30px; }
+
+.p2-trustbar { margin-bottom: 28px; }
+.p2-trustbar .cell { padding: 13px 16px; }
+
+.p2-reviews { margin-bottom: 28px; }
+.p2-reviews .rhead { margin-bottom: 12px; }
+.p2-rgrid { gap: 16px; }
+.p2-review { padding: 16px; }
+.p2-review .who { margin-bottom: 9px; }
+
+.p2-cta { padding: 18px 24px; margin-bottom: 28px; }
+.p2-cta .rocket { font-size: 32px; }
+
+footer.p2-footer { padding: 26px 0 0; }
+.p2-footgrid { gap: 24px; }
+.p2-footgrid ul { gap: 7px; }
+.p2-copy { margin-top: 20px; padding: 12px 0; }
+
 @media (prefers-reduced-motion: reduce) {
   .pcard, .p2-price, .watch-btn, .p2-card-cta, .p2-sample { transition: none; }
   .pcard:hover { transform: none; }
