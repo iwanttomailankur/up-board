@@ -112,10 +112,18 @@
 .p2-sample.blue { background: #EEF4F8; border: 1px solid #C6DAE7; }
 .p2-sample.blue strong { color: var(--teal-deep, #2F6690); }
 
-/* chapter-list variant of the blue box */
-.p2-sample.chap { justify-content: center; gap: 2px; cursor: default; }
+/* chapter-list variant of the blue box — left-aligned bullets, shown first */
+.p2-sample.chap { order: -1; justify-content: center; align-items: flex-start; text-align: left; gap: 3px; cursor: default; padding-left: 10px; }
 .p2-sample.chap:hover { filter: none; }
-.p2-sample.chap span { color: var(--teal-deep, #2F6690); font-weight: 700; font-size: 10.5px; line-height: 1.35; }
+.p2-sample.chap span {
+  color: var(--teal-deep, #2F6690); font-weight: 700; font-size: 10.5px; line-height: 1.35;
+  padding-left: 11px; position: relative;
+}
+.p2-sample.chap span::before {
+  content: "•";
+  position: absolute; left: 0;
+  color: var(--teal-deep, #2F6690);
+}
 
 /* price band — navy + amber (brand) */
 .p2-price {
