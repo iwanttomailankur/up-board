@@ -207,7 +207,7 @@
 
 /* booster pack (compact, inside sidebar) */
 .p2-booster {
-  margin-top: auto;
+  margin-top: 14px;
   background: linear-gradient(115deg, #246B45 0%, var(--green, #2E8B57) 70%);
   border-radius: 12px; padding: 14px 16px; color: #fff;
 }
