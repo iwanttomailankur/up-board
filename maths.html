@@ -14,7 +14,9 @@
   <link rel="stylesheet" href="assets/physics.css">
 
 <link rel="canonical" href="https://upboardexam.com/maths.html">
+<link rel="icon" href="assets/favicon.ico" sizes="32x32">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <meta name="theme-color" content="#14181F">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="UPBoardExam.com">
@@ -107,14 +109,59 @@
 </div>
 
 <header class="hero">
-  <div class="wrap">
-    <p class="hero-eyebrow">यूपीएमएसपी · कक्षा 12 · 2027 बोर्ड परीक्षा</p>
-    <h1>गणित — आपके प्रश्नों का एकमात्र समाधान!</h1>
-    <p class="lead">नोट्स + प्रश्न बैंक + PYQ हल = बोर्ड में पूरी सफलता। कलन से प्रायिकता तक, पूरे 100 अंक थ्योरी में।</p>
-    <div class="hero-stats">
+  <div class="wrap hero-2col">
+    <div class="hero-left">
+      <p class="hero-eyebrow">यूपीएमएसपी · कक्षा 12 · 2027 बोर्ड परीक्षा</p>
+      <h1>गणित — आपके प्रश्नों का एकमात्र समाधान!</h1>
+      <p class="lead">नोट्स + प्रश्न बैंक + PYQ हल = बोर्ड में पूरी सफलता। कलन से प्रायिकता तक, पूरे 100 अंक थ्योरी में।</p>
+      <div class="hero-stats">
       <div><span class="num">6</span><span class="label">यूनिट कवर की गईं</span></div>
       <div><span class="num">100</span><span class="label">थ्योरी अंक (केवल)</span></div>
-      <div><span class="num">हिंदी माध्यम</span><span class="label">पूरी तरह उपलब्ध</span></div>
+      <div><span class="num">हिंदी माध्यम</span><span class="label">पूरी तरह उपलब्ध</span></div></div>
+    </div>
+    <div class="hero-promo">
+      <div class="hp-viewport"><div class="hp-track" id="hpTrack">
+        <div class="hp-slide">
+          <a class="hp-card hp-booster" href="papers.html">
+            <p class="hp-kick">UP Board Booster Pack</p>
+            <h3>5 साल के हल प्रश्नपत्र – गणित</h3>
+            <div class="hp-price"><s>₹249</s><span>₹199</span></div>
+            <ul>
+              <li>✅ 2021–2025 के पूर्ण हल प्रश्नपत्र</li>
+              <li>✅ यूनिट-वार टैग किए गए प्रश्न</li>
+              <li>✅ संक्षिप्त उत्तर शैली, बोर्ड पैटर्न पर</li>
+            </ul>
+            <span class="hp-btn">अभी खरीदें →</span>
+          </a>
+        </div>
+        <div class="hp-slide">
+          <a class="hp-card hp-subj physics" href="physics.html">
+            <div class="hp-top"><span class="ic">🔬</span><div><p class="nm">भौतिकी</p><p class="en">Physics</p></div></div>
+            <p class="hp-desc">9 यूनिट · विद्युत, चुंबकत्व, प्रकाशिकी व आधुनिक भौतिकी।</p>
+            <span class="hp-btn">शुरू करें →</span>
+          </a>
+        </div>
+        <div class="hp-slide">
+          <a class="hp-card hp-subj chem" href="chemistry.html">
+            <div class="hp-top"><span class="ic">🧪</span><div><p class="nm">रसायन विज्ञान</p><p class="en">Chemistry</p></div></div>
+            <p class="hp-desc">10 यूनिट · भौतिक, अकार्बनिक व कार्बनिक रसायन।</p>
+            <span class="hp-btn">शुरू करें →</span>
+          </a>
+        </div>
+        <div class="hp-slide">
+          <a class="hp-card hp-subj bio" href="biology.html">
+            <div class="hp-top"><span class="ic">🧬</span><div><p class="nm">जीव विज्ञान</p><p class="en">Biology</p></div></div>
+            <p class="hp-desc">5 यूनिट · जनन, आनुवंशिकी, जैव प्रौद्योगिकी व पारिस्थितिकी।</p>
+            <span class="hp-btn">शुरू करें →</span>
+          </a>
+        </div>
+      </div></div>
+      <div class="hp-dots" id="hpDots">
+        <button class="on" type="button" aria-label="स्लाइड 1"></button>
+        <button type="button" aria-label="स्लाइड 2"></button>
+        <button type="button" aria-label="स्लाइड 3"></button>
+        <button type="button" aria-label="स्लाइड 4"></button>
+      </div>
     </div>
   </div>
 </header>
@@ -494,7 +541,6 @@
   <section class="p2-reviews">
     <div class="rhead">
       <h2>छात्र क्या कह रहे हैं</h2>
-      <a class="all" href="#">सभी समीक्षाएं देखें →</a>
     </div>
     <div class="p2-carousel">
       <div class="p2-track" id="rvTrack">
@@ -585,27 +631,6 @@
     </div>
   </section>
 
-  <section class="p2-subjects">
-    <h2>अन्य विषय भी पढ़ें</h2>
-    <div class="sub-grid">
-      <a class="sub-card" href="physics.html">
-        <span class="ic">🔬</span>
-        <div><p class="t">भौतिकी</p><p class="s">9 यूनिट · 70 थ्योरी + 30 प्रैक्टिकल अंक</p></div>
-        <span class="go">शुरू करें →</span>
-      </a>
-      <a class="sub-card" href="chemistry.html">
-        <span class="ic">🧪</span>
-        <div><p class="t">रसायन विज्ञान</p><p class="s">10 यूनिट · 70 थ्योरी + 30 प्रैक्टिकल अंक</p></div>
-        <span class="go">शुरू करें →</span>
-      </a>
-      <a class="sub-card" href="biology.html">
-        <span class="ic">🧬</span>
-        <div><p class="t">जीव विज्ञान</p><p class="s">5 यूनिट · 70 थ्योरी + 30 प्रैक्टिकल अंक</p></div>
-        <span class="go">शुरू करें →</span>
-      </a>
-    </div>
-  </section>
-
   <section class="p2-cta">
     <div class="left">
       <span class="rocket">🚀</span>
@@ -680,6 +705,20 @@
   dots.forEach(function (d, k) { d.addEventListener('click', function () { i = k; go(); }); });
   setInterval(function () { if (paused) return; i = (i + 1) % pages; go(); }, 4000);
 })();
+
+// Hero promo carousel: rotate booster + other subjects
+(function () {
+  var t = document.getElementById('hpTrack'); if (!t) return;
+  var dots = document.querySelectorAll('#hpDots button');
+  var n = t.children.length, i = 0, paused = false;
+  var box = t.closest('.hero-promo');
+  box.addEventListener('mouseenter', function () { paused = true; });
+  box.addEventListener('mouseleave', function () { paused = false; });
+  function go() { t.style.transform = 'translateX(-' + (i * 100) + '%)'; dots.forEach(function (d, k) { d.classList.toggle('on', k === i); }); }
+  dots.forEach(function (d, k) { d.addEventListener('click', function () { i = k; go(); }); });
+  setInterval(function () { if (paused) return; i = (i + 1) % n; go(); }, 4500);
+})();
+
 </script>
 
 </body>
