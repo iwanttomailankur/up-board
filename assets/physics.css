@@ -660,19 +660,20 @@ footer.p2-footer { padding: 26px 0 0; }
 /* hero promo carousel */
 .hero .hero-2col { display: flex; gap: 32px; align-items: center; flex-wrap: wrap; }
 .hero-left { flex: 1 1 430px; min-width: 0; }
-.hero-promo { flex: 0 0 360px; max-width: 100%; }
+.hero-promo { flex: 0 0 220px; max-width: 100%; }
 .hp-viewport { overflow: hidden; border-radius: 16px; box-shadow: 0 16px 40px -16px rgba(0,0,0,.6); }
-.hp-track { display: flex; transition: transform .6s ease; }
-.hp-slide { flex: 0 0 100%; }
+.hp-track { display: flex; align-items: stretch; transition: transform .6s ease; }
+.hp-slide { flex: 0 0 100%; display: flex; }
 .hp-card {
-  display: flex; flex-direction: column; gap: 10px; min-height: 234px;
-  padding: 20px 22px; color: #fff;
+  flex: 1;
+  display: flex; flex-direction: column; gap: 9px; min-height: 214px;
+  padding: 18px; color: #fff;
 }
 .hp-kick { font-size: 12px; font-weight: 700; opacity: .85; margin: 0; }
-.hp-card h3 { font-family: var(--font-display); font-size: 20px; font-weight: 800; margin: 0; color: #fff; line-height: 1.25; }
-.hp-price { display: flex; align-items: baseline; gap: 10px; }
-.hp-price s { opacity: .7; font-size: 15px; }
-.hp-price span { font-family: var(--font-display); font-size: 28px; font-weight: 800; }
+.hp-card h3 { font-family: var(--font-display); font-size: 17px; font-weight: 800; margin: 0; color: #fff; line-height: 1.25; }
+.hp-price { display: flex; align-items: baseline; gap: 8px; }
+.hp-price s { opacity: .7; font-size: 14px; }
+.hp-price span { font-family: var(--font-display); font-size: 25px; font-weight: 800; }
 .hp-card ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 5px; }
 .hp-card li { font-size: 12.5px; font-weight: 600; opacity: .95; }
 .hp-desc { font-size: 13px; line-height: 1.55; opacity: .95; margin: 0; flex: 1; }
@@ -685,8 +686,8 @@ footer.p2-footer { padding: 26px 0 0; }
 .hp-card:hover .hp-btn { filter: brightness(1.06); }
 .hp-booster { background: linear-gradient(115deg, #246B45 0%, var(--green, #2E8B57) 70%); }
 .hp-subj .hp-top { display: flex; align-items: center; gap: 12px; }
-.hp-subj .hp-top .ic { font-size: 32px; flex: none; }
-.hp-subj .nm { font-family: var(--font-display); font-size: 19px; font-weight: 800; margin: 0; color: #fff; }
+.hp-subj .hp-top .ic { font-size: 28px; flex: none; }
+.hp-subj .nm { font-family: var(--font-display); font-size: 17px; font-weight: 800; margin: 0; color: #fff; line-height: 1.2; }
 .hp-subj .en { font-size: 12px; opacity: .8; margin: 2px 0 0; }
 .hp-subj.physics { background: linear-gradient(115deg, #1B1464, #3B1D8F 55%, #1D4ED8); }
 .hp-subj.chem { background: linear-gradient(115deg, #831843, #9D174D 55%, #BE185D); }
