@@ -138,12 +138,12 @@
 .p2-inc-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 5px; }
 .p2-inc {
   border: 1px solid var(--line, #E6DFCF); border-radius: 7px;
-  padding: 5px 2px 4px; text-align: center;
-  display: flex; flex-direction: column; align-items: center; justify-content: flex-start; gap: 2px;
+  padding: 5px 5px; text-align: left;
+  display: flex; flex-direction: row; align-items: center; gap: 5px;
   background: #fff;
 }
 .p2-inc svg.ic { width: 15px; height: 15px; flex: none; }
-.p2-inc .tx { font-size: 8.5px; font-weight: 700; color: #3D4459; line-height: 1.25; }
+.p2-inc .tx { font-size: 9px; font-weight: 700; color: #3D4459; line-height: 1.25; }
 
 /* social proof */
 .p2-proof {
