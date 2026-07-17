@@ -226,19 +226,21 @@
 .p2-proof .buyers { color: var(--green, #2E8B57); }
 .p2-proof .rating { color: var(--amber-deep, #C77E1B); white-space: nowrap; }
 
-/* limited-time offer sticker wrapping the bottom bundle CTA */
-.p2-cta-wrap { margin-top: auto; position: relative; padding-top: 14px; }
+/* offer starburst seal on the bundle CTA (top-right corner) */
+.p2-cta-wrap { margin-top: auto; position: relative; }
 .p2-limited {
-  position: absolute; top: 0; left: 50%; transform: translate(-50%, -50%);
-  z-index: 2; white-space: nowrap;
-  background: linear-gradient(90deg, #DC2626, #EF4444);
-  color: #fff; font-size: 10px; font-weight: 800; letter-spacing: .04em;
-  padding: 4px 12px; border-radius: 999px;
-  animation: p2glow 1.8s ease-in-out infinite;
+  position: absolute; top: -12px; right: -6px; z-index: 3;
+  width: 46px; height: 46px;
+  display: flex; align-items: center; justify-content: center;
+  background: linear-gradient(135deg, #EF4444, #DC2626);
+  color: #fff; font-size: 11px; font-weight: 800; letter-spacing: .02em;
+  transform: rotate(-14deg);
+  clip-path: polygon(50.0% 0.0%, 40.4% 14.3%, 25.0% 6.7%, 23.8% 23.8%, 6.7% 25.0%, 14.3% 40.4%, 0.0% 50.0%, 14.3% 59.6%, 6.7% 75.0%, 23.8% 76.2%, 25.0% 93.3%, 40.4% 85.7%, 50.0% 100.0%, 59.6% 85.7%, 75.0% 93.3%, 76.2% 76.2%, 93.3% 75.0%, 85.7% 59.6%, 100.0% 50.0%, 85.7% 40.4%, 93.3% 25.0%, 76.2% 23.8%, 75.0% 6.7%, 59.6% 14.3%);
+  animation: p2pulse 1.6s ease-in-out infinite;
 }
-@keyframes p2glow {
-  0%, 100% { box-shadow: 0 0 6px 1px rgba(220,38,38,.5); }
-  50% { box-shadow: 0 0 16px 4px rgba(220,38,38,.9); }
+@keyframes p2pulse {
+  0%, 100% { filter: drop-shadow(0 0 3px rgba(220,38,38,.5)); }
+  50% { filter: drop-shadow(0 0 10px rgba(220,38,38,.95)); }
 }
 
 /* bottom bundle CTA — brand amber (same family as .buy-btn) */
@@ -627,5 +629,5 @@ footer.p2-footer { padding: 26px 0 0; }
   .pcard, .p2-price, .watch-btn, .p2-card-cta, .p2-sample, .sub-card, .yt-center svg { transition: none; }
   .pcard:hover, .sub-card:hover { transform: none; }
   .p2-track { transition: none; }
-  .p2-limited { animation: none; }
+  .p2-limited { animation: none; transform: rotate(-14deg); }
 }
