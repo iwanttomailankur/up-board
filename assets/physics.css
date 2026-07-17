@@ -349,21 +349,21 @@
 .p2-reviews .rhead { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-bottom: 18px; }
 .p2-reviews h2 { color: var(--navy, #14181F); font-size: 24px; font-weight: 800; margin: 0; }
 .p2-reviews .all { color: var(--amber-deep, #C77E1B); font-size: 13.5px; font-weight: 700; }
-/* auto-scrolling carousel (CSS marquee: track holds two identical sets) */
-.p2-carousel { overflow: hidden; position: relative; }
-.p2-carousel::before, .p2-carousel::after {
-  content: ""; position: absolute; top: 0; bottom: 0; width: 40px; z-index: 2; pointer-events: none;
+/* paged carousel: shows 3, waits, slides to the next 3 (JS-driven) */
+.p2-carousel { overflow: hidden; }
+.p2-track { display: flex; transition: transform .6s ease; }
+.p2-page {
+  flex: 0 0 100%;
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
+  padding: 4px;
 }
-.p2-carousel::before { left: 0; background: linear-gradient(90deg, var(--paper, #FBF7EF), transparent); }
-.p2-carousel::after { right: 0; background: linear-gradient(270deg, var(--paper, #FBF7EF), transparent); }
-.p2-track { display: flex; gap: 16px; width: max-content; animation: p2scroll 45s linear infinite; }
-.p2-carousel:hover .p2-track { animation-play-state: paused; }
-.p2-set { display: flex; gap: 16px; }
-@keyframes p2scroll {
-  to { transform: translateX(calc(-50% - 8px)); }
+.p2-dots { display: flex; justify-content: center; gap: 8px; margin-top: 12px; }
+.p2-dots button {
+  width: 9px; height: 9px; padding: 0; border: 0; border-radius: 50%;
+  background: #D8CFBB; cursor: pointer; transition: background .15s ease, width .15s ease;
 }
+.p2-dots button.on { width: 22px; border-radius: 999px; background: var(--amber-deep, #C77E1B); }
 .p2-review {
-  width: 330px; flex: none;
   background: #FFFFFF; border: 1px solid var(--line, #E6DFCF); border-radius: 14px;
   padding: 16px;
   box-shadow: var(--shadow, 0 10px 30px -12px rgba(20, 24, 31, 0.18));
@@ -378,6 +378,29 @@
 .p2-review .pl { color: var(--muted, #6B7280); font-size: 12px; }
 .p2-review .stars { color: var(--amber, #E8A33D); font-size: 13px; letter-spacing: 1.5px; margin-left: auto; }
 .p2-review p { color: #4B5568; font-size: 13.5px; line-height: 1.65; margin: 0; font-style: italic; }
+
+/* ============================================================
+   OTHER SUBJECTS
+   ============================================================ */
+.p2-subjects { margin-bottom: 28px; }
+.p2-subjects h2 { color: var(--navy, #14181F); font-size: 24px; font-weight: 800; margin: 0 0 14px; }
+.sub-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.sub-card {
+  display: flex; align-items: center; gap: 14px;
+  background: #FFFFFF; border: 1px solid var(--line, #E6DFCF); border-radius: 14px;
+  padding: 16px 18px;
+  box-shadow: var(--shadow, 0 10px 30px -12px rgba(20, 24, 31, 0.18));
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.sub-card:hover { transform: translateY(-3px); box-shadow: 0 16px 34px -14px rgba(20, 24, 31, 0.28); }
+.sub-card .ic { font-size: 30px; flex: none; }
+.sub-card .t { font-family: var(--font-display); font-size: 17px; font-weight: 800; color: var(--navy, #14181F); margin: 0; }
+.sub-card .s { font-size: 12px; color: var(--muted, #6B7280); margin: 2px 0 0; }
+.sub-card .go {
+  margin-left: auto; flex: none;
+  background: var(--amber, #E8A33D); color: var(--navy, #14181F);
+  font-size: 12.5px; font-weight: 800; padding: 8px 14px; border-radius: 999px; white-space: nowrap;
+}
 
 /* ============================================================
    FINAL CTA (navy panel, matches site accents)
@@ -429,8 +452,11 @@ footer.p2-footer .wrap { display: block; text-align: left; }
   .p2-bundles { grid-template-columns: 1fr; }
   .p2-footgrid { grid-template-columns: 1fr 1fr; }
 }
+@media (max-width: 900px) {
+  .sub-grid { grid-template-columns: 1fr; }
+}
 @media (max-width: 640px) {
-  .p2-review { width: 280px; }
+  .p2-page { grid-template-columns: 1fr; }
 }
 @media (max-width: 640px) {
   .p2-footgrid { grid-template-columns: 1fr; }
@@ -482,8 +508,7 @@ footer.p2-footer { padding: 26px 0 0; }
 .p2-copy { margin-top: 20px; padding: 12px 0; }
 
 @media (prefers-reduced-motion: reduce) {
-  .pcard, .p2-price, .watch-btn, .p2-card-cta, .p2-sample { transition: none; }
-  .pcard:hover { transform: none; }
-  .p2-track { animation: none; }
-  .p2-carousel { overflow-x: auto; }
+  .pcard, .p2-price, .watch-btn, .p2-card-cta, .p2-sample, .sub-card { transition: none; }
+  .pcard:hover, .sub-card:hover { transform: none; }
+  .p2-track { transition: none; }
 }
