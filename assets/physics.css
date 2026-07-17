@@ -112,6 +112,11 @@
 .p2-sample.blue { background: #EEF4F8; border: 1px solid #C6DAE7; }
 .p2-sample.blue strong { color: var(--teal-deep, #2F6690); }
 
+/* chapter-list variant of the blue box */
+.p2-sample.chap { justify-content: center; gap: 2px; cursor: default; }
+.p2-sample.chap:hover { filter: none; }
+.p2-sample.chap span { color: var(--teal-deep, #2F6690); font-weight: 700; font-size: 10.5px; line-height: 1.35; }
+
 /* price band — navy + amber (brand) */
 .p2-price {
   display: block; border-radius: 10px; overflow: hidden; text-align: center;
