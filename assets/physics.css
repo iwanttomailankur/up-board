@@ -349,18 +349,30 @@
 .p2-reviews .rhead { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-bottom: 18px; }
 .p2-reviews h2 { color: var(--navy, #14181F); font-size: 24px; font-weight: 800; margin: 0; }
 .p2-reviews .all { color: var(--amber-deep, #C77E1B); font-size: 13.5px; font-weight: 700; }
-.p2-rgrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+/* auto-scrolling carousel (CSS marquee: track holds two identical sets) */
+.p2-carousel { overflow: hidden; position: relative; }
+.p2-carousel::before, .p2-carousel::after {
+  content: ""; position: absolute; top: 0; bottom: 0; width: 40px; z-index: 2; pointer-events: none;
+}
+.p2-carousel::before { left: 0; background: linear-gradient(90deg, var(--paper, #FBF7EF), transparent); }
+.p2-carousel::after { right: 0; background: linear-gradient(270deg, var(--paper, #FBF7EF), transparent); }
+.p2-track { display: flex; gap: 16px; width: max-content; animation: p2scroll 45s linear infinite; }
+.p2-carousel:hover .p2-track { animation-play-state: paused; }
+.p2-set { display: flex; gap: 16px; }
+@keyframes p2scroll {
+  to { transform: translateX(calc(-50% - 8px)); }
+}
 .p2-review {
+  width: 330px; flex: none;
   background: #FFFFFF; border: 1px solid var(--line, #E6DFCF); border-radius: 14px;
-  padding: 20px;
+  padding: 16px;
   box-shadow: var(--shadow, 0 10px 30px -12px rgba(20, 24, 31, 0.18));
 }
-.p2-review .who { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+.p2-review .who { display: flex; align-items: center; gap: 12px; margin-bottom: 9px; }
 .p2-review .av {
   width: 42px; height: 42px; border-radius: 50%; flex: none;
+  object-fit: cover;
   background: linear-gradient(135deg, var(--amber, #E8A33D), var(--amber-deep, #C77E1B));
-  color: var(--navy, #14181F); font-family: var(--font-display); font-weight: 800; font-size: 16px;
-  display: flex; align-items: center; justify-content: center;
 }
 .p2-review .nm { color: var(--navy, #14181F); font-size: 14.5px; font-weight: 800; }
 .p2-review .pl { color: var(--muted, #6B7280); font-size: 12px; }
@@ -415,8 +427,10 @@ footer.p2-footer .wrap { display: block; text-align: left; }
    ============================================================ */
 @media (max-width: 1100px) {
   .p2-bundles { grid-template-columns: 1fr; }
-  .p2-rgrid { grid-template-columns: 1fr; }
   .p2-footgrid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 640px) {
+  .p2-review { width: 280px; }
 }
 @media (max-width: 640px) {
   .p2-footgrid { grid-template-columns: 1fr; }
@@ -470,4 +484,6 @@ footer.p2-footer { padding: 26px 0 0; }
 @media (prefers-reduced-motion: reduce) {
   .pcard, .p2-price, .watch-btn, .p2-card-cta, .p2-sample { transition: none; }
   .pcard:hover { transform: none; }
+  .p2-track { animation: none; }
+  .p2-carousel { overflow-x: auto; }
 }
