@@ -658,7 +658,7 @@ footer.p2-footer { padding: 26px 0 0; }
 
 
 /* hero promo carousel */
-.hero .hero-2col { display: flex; gap: 32px; align-items: center; flex-wrap: wrap; }
+.hero .hero-2col { display: flex; gap: 32px; align-items: flex-start; flex-wrap: wrap; }
 .hero-left { flex: 1 1 430px; min-width: 70%; }
 .hero-promo { flex: 0 0 200px; max-width: 25%; margin-left: auto; }
 .hp-viewport { overflow: hidden; border-radius: 16px; box-shadow: 0 16px 40px -16px rgba(0,0,0,.6); }
