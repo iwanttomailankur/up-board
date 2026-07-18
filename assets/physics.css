@@ -278,6 +278,7 @@
 .p2-card-cta:hover { filter: brightness(1.06); }
 .p2-card-cta .arr { font-size: 15px; }
 .p2-card-cta .ctabig { font-size: 18px; font-weight: 800; vertical-align: -1px; }
+.p2-card-cta s { opacity: .6; font-weight: 600; margin: 0 1px; }
 
 /* ============================================================
    SIDEBAR — "यूनिट क्यों खरीदें?" (sits inside the unit grid)
