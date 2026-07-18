@@ -708,6 +708,15 @@ footer.p2-footer { padding: 26px 0 0; }
   .hero-statsrow { gap: 20px; }
   .hero-bundle { width: 100%; }
 }
+/* desktop: float the bundle into the gap between the text and the carousel */
+@media (min-width: 821px) {
+  .hero-left { position: relative; }
+  .hero-left .hero-eyebrow,
+  .hero-left h1,
+  .hero-left .lead,
+  .hero-left .hero-statsrow { max-width: calc(100% - 285px); }
+  .hero-statsrow .hero-bundle { position: absolute; top: 78px; right: 0; margin: 0; }
+}
 .hero-left { flex: 1 1 430px; min-width: 70%; }
 .hero-promo { flex: 0 0 200px; max-width: 25%; margin-left: auto; }
 .hp-viewport { overflow: hidden; border-radius: 16px; box-shadow: 0 16px 40px -16px rgba(0,0,0,.6); }
