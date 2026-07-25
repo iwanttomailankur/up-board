@@ -529,3 +529,22 @@ footer a:hover { color: var(--amber); }
 .class-toggle .ct-opt.on { background: var(--amber, #E8A33D); color: var(--navy, #14181F); }
 .class-toggle .ct-opt.soon { color: #8B93A1; cursor: not-allowed; }
 .class-toggle .ct-opt.soon .j { font-size: 8.5px; font-weight: 800; color: var(--amber, #E8A33D); margin-left: 5px; letter-spacing: .02em; }
+
+
+/* ---------- Site footer (consistent across all pages) ---------- */
+footer.p2-footer { background: var(--navy, #14181F); border-top: 1px solid var(--navy-line, #2A3242); padding: 40px 0 0; }
+footer.p2-footer .wrap { display: block; text-align: left; }
+.p2-footgrid { display: grid; grid-template-columns: 2fr 1fr 1fr 1.4fr; gap: 34px; }
+.p2-footgrid .fbrand { color: #fff; font-family: var(--font-display); font-size: 19px; font-weight: 800; margin: 0 0 10px; }
+.p2-footgrid .fbrand .dot { color: var(--amber, #E8A33D); }
+.p2-footgrid p { color: #8B93A1; font-size: 13px; line-height: 1.6; margin: 0 0 14px; }
+.p2-footgrid h4 { color: #fff; font-size: 14px; font-weight: 800; margin: 0 0 12px; }
+.p2-footgrid ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 9px; }
+.p2-footgrid li, .p2-footgrid li a { color: #9AA3B8; font-size: 13px; }
+.p2-footgrid li a:hover { color: var(--amber, #E8A33D); }
+.p2-social { display: flex; gap: 10px; }
+.p2-social a { width: 32px; height: 32px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 15px; background: #1E2532; border: 1px solid #2A3242; transition: background .15s ease; }
+.p2-social a:hover { background: #2A3242; }
+.p2-copy { border-top: 1px solid #2A3242; margin-top: 32px; padding: 16px 0; text-align: center; color: #6B7487; font-size: 12.5px; }
+@media (max-width: 1100px) { .p2-footgrid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 640px)  { .p2-footgrid { grid-template-columns: 1fr; } }
