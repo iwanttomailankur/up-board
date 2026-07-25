@@ -626,7 +626,7 @@ footer.p2-footer .wrap { display: block; text-align: left; }
    ============================================================ */
 .topbar .wrap { padding-top: 10px; padding-bottom: 10px; }
 
-.hero { padding: 24px 0 22px; }
+.hero { padding: 24px 0 22px; min-height: 340px; }
 .hero-eyebrow { margin: 0 0 6px; }
 .hero h1 { margin: 0 0 8px; }
 .hero .lead { margin: 0 0 12px; }
