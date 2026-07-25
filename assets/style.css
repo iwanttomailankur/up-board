@@ -73,8 +73,8 @@ button:focus-visible {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 14px;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .brand {
   color: #fff;
@@ -110,6 +110,22 @@ button:focus-visible {
   color: var(--amber);
   border-bottom-color: var(--amber);
   font-weight: 600;
+}
+
+/* Shop CTA in the nav — stands out (white bold, amber pill) */
+.nav-links a.nav-shop {
+  color: #fff;
+  font-weight: 800;
+  border: 1.5px solid var(--amber);
+  border-radius: 999px;
+  padding: 5px 16px;
+  transition: background .15s ease, color .15s ease;
+}
+.nav-links a.nav-shop:hover,
+.nav-links a.nav-shop.active {
+  background: var(--amber);
+  color: var(--navy);
+  border-color: var(--amber);
 }
 
 /* ---------- Hero ---------- */
