@@ -690,11 +690,11 @@ footer.p2-footer { padding: 26px 0 0; }
 }
 .hero-bundle:hover { filter: brightness(1.04); transform: translateY(-1px); }
 .hero-bundle .hb-badge {
-  position: absolute; top: -9px; left: 16px;
+  position: absolute; top: -9px; left: 275px;
   background: #DC2626; color: #fff; font-size: 10px; font-weight: 800;
   padding: 3px 11px; border-radius: 999px; letter-spacing: .02em;
 }
-.hero-bundle .hb-text { color: var(--navy, #14181F); font-weight: 800; font-size: 14px; line-height: 1.25; }
+.hero-bundle .hb-text { color: var(--navy, #14181F); font-weight: 800; font-size: 20px; line-height: 1.25; }
 .hero-bundle .hb-sub { font-weight: 600; font-size: 12px; opacity: .85; }
 .hero-bundle .hb-price { color: var(--navy, #14181F); font-weight: 800; white-space: nowrap; display: flex; align-items: baseline; gap: 6px; margin-left: auto; }
 .hero-bundle .hb-price s { opacity: .55; font-weight: 600; font-size: 13px; }
