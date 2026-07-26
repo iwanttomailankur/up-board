@@ -653,6 +653,50 @@ footer.p2-footer .wrap { display: block; text-align: left; }
 .jump-nav a + a::before { content: "·"; color: var(--amber, #E8A33D); margin: 0 10px; }
 .paper-section[id] { scroll-margin-top: 72px; }
 
+/* per-subject free NCERT textbook strip */
+.ncert-strip {
+  display: flex; align-items: center; flex-wrap: wrap; gap: 8px 12px;
+  margin: 0 0 18px; padding: 10px 14px;
+  background: #EDF6F0; border: 1px solid #C8E3D2; border-radius: 10px;
+}
+.ncert-strip .ns-label { font-weight: 800; color: var(--green, #2E8B57); font-size: 13px; }
+.ncert-strip a {
+  color: var(--teal-deep, #2F6690); font-weight: 700; font-size: 12.5px;
+  padding: 4px 12px; border-radius: 999px; background: #fff; border: 1px solid #C8E3D2;
+  transition: background .15s ease, color .15s ease, border-color .15s ease;
+}
+.ncert-strip a:hover { background: var(--green, #2E8B57); color: #fff; border-color: var(--green, #2E8B57); }
+
+/* NCERT free textbook cards */
+.books-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 18px; }
+.book-card {
+  display: flex; align-items: center; gap: 14px;
+  background: #fff; border: 1px solid var(--line, #E6DFCF); border-radius: 14px; padding: 14px;
+  box-shadow: var(--shadow, 0 10px 30px -12px rgba(20,24,31,.18));
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.book-card:hover { transform: translateY(-3px); box-shadow: 0 16px 34px -14px rgba(20,24,31,.28); }
+.book-card.soon { opacity: .8; }
+.bk-cover {
+  position: relative; width: 70px; height: 94px; flex: none; border-radius: 4px 8px 8px 4px;
+  display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 3px;
+  color: #fff; text-align: center; padding: 6px; overflow: hidden;
+  box-shadow: 0 6px 14px -6px rgba(0,0,0,.5);
+}
+.bk-cover::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 6px; background: rgba(0,0,0,.28); }
+.bk-cover .bk-t { font-family: var(--font-display); font-weight: 800; font-size: 12.5px; line-height: 1.05; }
+.bk-cover .bk-c { font-size: 7px; opacity: .9; }
+.bk-cover .bk-p { margin-top: 2px; font-size: 8px; font-weight: 800; background: rgba(255,255,255,.22); padding: 1px 6px; border-radius: 3px; }
+.bk-cover.phys { background: linear-gradient(160deg, #E8A33D, #C77E1B); }
+.bk-cover.chem { background: linear-gradient(160deg, #BE185D, #831843); }
+.bk-cover.bio { background: linear-gradient(160deg, #2E8B57, #064E3B); }
+.bk-cover.maths { background: linear-gradient(160deg, #2F6690, #164E63); }
+.bk-info { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+.bk-name { font-family: var(--font-display); font-weight: 800; font-size: 15px; color: var(--navy, #14181F); margin: 0; }
+.bk-meta { font-size: 11.5px; color: var(--muted, #6B7280); margin: 0; }
+.bk-btn { margin-top: 7px; align-self: flex-start; background: var(--green, #2E8B57); color: #fff; font-size: 12.5px; font-weight: 800; padding: 7px 14px; border-radius: 999px; }
+.book-card.soon .bk-btn { background: #9AA3B0; cursor: default; }
+
 .notes-delivery { max-width: 760px; margin: 44px auto 0; }
 .notes-delivery h2 { color: var(--navy, #14181F); font-size: 22px; font-weight: 800; margin: 0 0 8px; }
 .notes-delivery p { color: #4B5568; font-size: 14.5px; line-height: 1.7; margin: 0; }
