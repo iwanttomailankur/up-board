@@ -667,11 +667,17 @@
       <div>
         <p class="fbrand">UPBoardExam<span class="dot">•</span>com</p>
         <p>UP बोर्ड के छात्रों के लिए सर्वश्रेष्ठ वीडियो लेक्चर, नोट्स, प्रश्न बैंक और हल प्रश्नपत्र समाधान!</p>
-        <div class="p2-social">
-          <a href="#" aria-label="YouTube">▶️</a>
-          <a href="#" aria-label="Telegram">✈️</a>
-          <a href="#" aria-label="Instagram">📷</a>
-          <a href="#" aria-label="Facebook">📘</a>
+        <div class="p2-app">
+          <span class="gplay" role="img" aria-label="UPBoardExam ऐप — Google Play पर जल्द आ रहा है">
+            <svg class="gplay-ic" viewBox="0 0 40 44" aria-hidden="true">
+              <polygon points="3,3 23,22 3,41" fill="#00D3FF"/>
+              <polygon points="3,3 34,15 23,22" fill="#00F076"/>
+              <polygon points="3,41 23,22 34,29" fill="#FF3B44"/>
+              <polygon points="23,22 34,15 34,29" fill="#FFCE00"/>
+            </svg>
+            <span class="gplay-txt"><small>जल्द आ रहा है</small><strong>Google Play</strong></span>
+          </span>
+          <p class="app-note">UPBoardExam Android ऐप — जल्द ही उपलब्ध</p>
         </div>
       </div>
       <div>
@@ -738,5 +744,11 @@
 
 </script>
 
+<button id="toTop" class="to-top" type="button" aria-label="ऊपर जाएँ">↑</button>
+<script>
+(function(){var b=document.getElementById('toTop');if(!b)return;
+window.addEventListener('scroll',function(){b.classList.toggle('show',window.scrollY>400);},{passive:true});
+b.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});})();
+</script>
 </body>
 </html>
