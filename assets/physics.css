@@ -707,8 +707,8 @@ footer.p2-footer { padding: 26px 0 0; }
   .hero-statsrow { gap: 18px; max-width: 100%; }
   .hero-bundle .hb-price { margin-left: 0; }
 }
-.hero-left { flex: 1 1 430px; min-width: 69%; }
-.hero-promo { flex: 0 0 245px; max-width: 27%; margin-left: auto; align-self: flex-end; display: flex; flex-direction: column; }
+.hero-left { flex: 1 1 430px; min-width: 65%; }
+.hero-promo { flex: 0 0 245px; min-width: 31%; margin-left: auto; align-self: flex-end; display: flex; flex-direction: column; }
 .hp-viewport { height: 272px; overflow: hidden; border-radius: 16px; box-shadow: 0 16px 40px -16px rgba(0,0,0,.6); min-width: 250px;}
 .hp-track { display: flex; align-items: stretch; height: 100%; transition: transform .6s ease; }
 .hp-slide { flex: 0 0 100%; display: flex; }
