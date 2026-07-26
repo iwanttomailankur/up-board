@@ -635,6 +635,17 @@ footer.p2-footer .wrap { display: block; text-align: left; }
 .sc-btn { background: var(--navy, #14181F); color: #fff; font-size: 13px; font-weight: 800; padding: 9px 16px; border-radius: 999px; white-space: nowrap; transition: filter .15s ease; }
 .sc-btn.amber { background: var(--amber, #E8A33D); color: var(--navy, #14181F); }
 .sc-btn:hover { filter: brightness(1.08); }
+.jump-nav {
+  display: flex; align-items: center; flex-wrap: wrap; gap: 8px 12px;
+  margin: 0 0 26px; padding: 11px 16px;
+  background: #fff; border: 1px solid var(--line, #E6DFCF); border-radius: 12px;
+  box-shadow: var(--shadow, 0 10px 30px -12px rgba(20,24,31,.18));
+}
+.jump-nav .jump-label { font-weight: 800; color: var(--navy, #14181F); font-size: 13.5px; }
+.jump-nav a { color: var(--teal-deep, #2F6690); font-weight: 700; font-size: 13.5px; padding: 4px 12px; border-radius: 999px; transition: background .15s ease, color .15s ease; }
+.jump-nav a:hover { background: var(--navy, #14181F); color: #fff; }
+.paper-section[id] { scroll-margin-top: 72px; }
+
 .notes-delivery { max-width: 760px; margin: 44px auto 0; }
 .notes-delivery h2 { color: var(--navy, #14181F); font-size: 22px; font-weight: 800; margin: 0 0 8px; }
 .notes-delivery p { color: #4B5568; font-size: 14.5px; line-height: 1.7; margin: 0; }
