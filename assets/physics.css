@@ -656,7 +656,7 @@ footer.p2-footer .wrap { display: block; text-align: left; }
 /* per-subject free NCERT textbook strip */
 .ncert-strip {
   display: flex; align-items: center; flex-wrap: wrap; gap: 6px 10px;
-  margin: 0; padding: 6px 12px;
+  margin: 0 10px 0 auto; padding: 6px 12px;
   background: #EDF6F0; border: 1px solid #C8E3D2; border-radius: 999px;
 }
 .ncert-strip .ns-label { font-weight: 800; color: var(--green, #2E8B57); font-size: 13px; }
