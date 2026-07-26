@@ -676,7 +676,7 @@ footer.p2-footer { padding: 26px 0 0; }
 .hero .hero-2col { display: flex; gap: 15px; align-items: stretch; flex-wrap: wrap; }
 
 /* hero: stats on top, full-subject bundle bar directly below them */
-.hero-statsrow { display: flex; flex-direction: column; align-items: flex-start; gap: 13px; margin-top: 14px; max-width: 600px; }
+.hero-statsrow { display: flex; flex-direction: column; align-items: flex-start; gap: 13px; margin-top: 14px; }
 .hero-statsrow .hero-stats { margin-top: 0; }
 
 /* hero full-subject bundle — compact horizontal bar below the stats */
