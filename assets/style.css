@@ -133,7 +133,7 @@ button:focus-visible {
   position: relative;
   background: var(--navy);
   overflow: hidden;
-  padding: 56px 0 44px;
+  padding: 24px 0 22px;
 }
 .circuit-bg {
   position: absolute;
