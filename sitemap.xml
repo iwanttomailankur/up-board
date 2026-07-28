@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://upboardexam.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://upboardexam.com/physics.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://upboardexam.com/chemistry.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://upboardexam.com/biology.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://upboardexam.com/maths.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://upboardexam.com/shop.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://upboardexam.com/papers.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://upboardexam.com/about.html</loc><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://upboardexam.com/contact.html</loc><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://upboardexam.com/privacy-policy.html</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>
+</urlset>
