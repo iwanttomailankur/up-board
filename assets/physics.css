@@ -854,8 +854,26 @@ footer.p2-footer { padding: 26px 0 0; }
 }
 
 .hp-card:hover .hp-btn { filter: brightness(1.06); }
-.hp-booster { background: linear-gradient(115deg, #246B45 0%, var(--green, #2E8B57) 70%); }
-.hp-booster.chemclr { background: linear-gradient(115deg, #831843, #9D174D 55%, #BE185D); }
+.hp-booster { position: relative; overflow: hidden; background: linear-gradient(115deg, #246B45 0%, var(--green, #2E8B57) 70%); }
+.hp-booster > * { position: relative; z-index: 1; }
+.hp-booster::after { content: ""; position: absolute; right: -10px; bottom: -16px; z-index: 0; font-size: 94px; line-height: 1; opacity: .16; pointer-events: none; }
+/* subject colour variants */
+.hp-booster.bioclr { background: linear-gradient(115deg, #064E3B, #2E8B57 70%); }
+.hp-booster.chemclr { background: linear-gradient(115deg, #7F1D1D, #B91C1C 55%, #DC2626); }
+.hp-booster.mathsclr { background: linear-gradient(115deg, #0B2A6B, #1D4ED8 55%, #2563EB); }
+.hp-booster.physclr { background: linear-gradient(115deg, #F7C948 0%, #E8A33D 58%, #C77E1B); color: #14181F; }
+/* themed watermark graphics */
+.hp-booster.physclr::after  { content: "🧲"; opacity: .22; }
+.hp-booster.chemclr::after  { content: "⚗️"; }
+.hp-booster.bioclr::after   { content: "🧬"; }
+.hp-booster.mathsclr::after { content: "📐"; }
+/* physics (gold) needs dark text for contrast */
+.hp-booster.physclr .hp-pyq-title { color: #14181F; }
+.hp-booster.physclr .hp-pyq-title .pyq { background: rgba(20,24,31,.16); color: #14181F; }
+.hp-booster.physclr .hp-solved { color: #14181F; }
+.hp-booster.physclr li { color: #14181F; }
+.hp-booster.physclr .hp-price, .hp-booster.physclr .hp-price s, .hp-booster.physclr .hp-price span { color: #14181F; }
+.hp-booster.physclr .hp-btn { background: #14181F; color: #fff; }
 .hp-subj .hp-top { display: flex; align-items: center; gap: 12px; }
 .hp-subj .hp-top .ic { font-size: 28px; flex: none; }
 .hp-subj .nm { font-family: var(--font-display); font-size: 17px; font-weight: 800; margin: 0; color: #fff; line-height: 1.2; }
