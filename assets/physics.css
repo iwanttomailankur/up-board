@@ -823,19 +823,22 @@ footer.p2-footer { padding: 26px 0 0; }
 .hp-price { display: flex; align-items: baseline; gap: 8px; }
 .hp-price s { opacity: .7; font-size: 14px; }
 .hp-price span { font-family: var(--font-display); font-size: 25px; font-weight: 800; }
-.hp-card ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 5px; }
-.hp-card li { font-size: 12.5px; font-weight: 600; opacity: .95; }
+.hp-card ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 3px; }
+.hp-card li { font-size: 12px; font-weight: 600; opacity: .95; }
 
 /* PYQ / exam-papers booster slide (new mockup) */
-.hp-booster { gap: 6px; padding: 14px; }
-.hp-pyq-title { display: flex; align-items: center; gap: 7px; color: #fff; font-family: var(--font-display); font-size: 18px; font-weight: 800; margin: 0; line-height: 1.2; }
+.hp-booster { gap: 5px; padding: 11px 13px; }
+.hp-pyq-title { display: flex; align-items: center; gap: 7px; color: #fff; font-family: var(--font-display); font-size: 17px; font-weight: 800; margin: 0; line-height: 1.15; }
 .hp-pyq-title .pyq { background: rgba(255,255,255,.18); border-radius: 6px; padding: 1px 8px; }
-.hp-sample { display: block; background: rgba(255,255,255,.94); border-radius: 10px; padding: 9px 10px; text-align: center; transition: filter .15s ease; }
+.hp-sample { display: block; background: rgba(255,255,255,.94); border-radius: 9px; padding: 6px 12px; text-align: left; transition: filter .15s ease; }
 .hp-sample:hover { filter: brightness(.97); }
-.hp-sample strong { display: block; color: #15803D; font-size: 16.5px; font-weight: 800; }
-.hp-sample span { color: #5B6B60; font-size: 17px; }
-.hp-solved { color: #fff; font-weight: 800; font-size: 20px; margin: 0; line-height: 1.25; padding-top: 3px;}
-.hp-buy { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: auto; margin-bottom: 10px; flex-wrap: wrap; }
+.hp-sample strong { display: block; color: #15803D; font-size: 14.5px; font-weight: 800; text-align: center; }
+.hp-sample span { display: flex; align-items: center; justify-content: space-between; gap: 9px; margin-top: 3px; }
+.hp-sample span b { color: #14181F; font-size: 19px; font-weight: 800; }
+.hp-sample span b s { color: #8A8A8A; font-size: 13px; font-weight: 700; margin-right: 4px; }
+.hp-sample span em { font-style: normal; background: var(--amber, #E8A33D); color: var(--navy, #14181F); font-weight: 800; font-size: 12.5px; padding: 5px 15px; border-radius: 999px; }
+.hp-solved { color: #fff; font-weight: 800; font-size: 17px; margin: 0; line-height: 1.2; padding-top: 1px;}
+.hp-buy { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: auto; margin-bottom: 4px; flex-wrap: wrap; }
 .hp-buy .hp-price { margin: 0; }
 .hp-buy .hp-price s { font-size: 15px; }
 .hp-buy .hp-price span { font-size: 28px; }
