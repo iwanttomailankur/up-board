@@ -159,6 +159,13 @@
   border-radius: 9px; padding: 12px 22px; white-space: nowrap; transition: filter .15s ease;
 }
 .p2-channel .yt-sub:hover { filter: brightness(.9); }
+.p2-channel .ch-actions { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+.p2-channel .yt-pl {
+  background: transparent; color: var(--navy, #14181F); border: 1.5px solid var(--navy, #14181F);
+  font-size: 14px; font-weight: 800; border-radius: 9px; padding: 11px 18px; white-space: nowrap;
+  transition: background .15s ease, color .15s ease;
+}
+.p2-channel .yt-pl:hover { background: var(--navy, #14181F); color: #fff; }
 
 /* --- trust row --- */
 .p2-trust-row {
