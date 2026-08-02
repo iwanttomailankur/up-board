@@ -708,6 +708,35 @@
 </footer>
 
 <script>
+// Video lightbox: play in a centered modal (not inside the small card),
+// so YouTube's controls render at a normal size.
+(function () {
+  var modal = document.createElement('div');
+  modal.className = 'p2-modal';
+  modal.innerHTML = '<div class="box"><button class="mclose" type="button" aria-label="बंद करें">×</button><div class="frame"></div></div>';
+  document.body.appendChild(modal);
+  var frame = modal.querySelector('.frame');
+  function open(id) {
+    frame.innerHTML = '<iframe src="https://www.youtube.com/embed/' + id +
+      '?autoplay=1&rel=0&modestbranding=1&playsinline=1" title="फ्री वीडियो लेक्चर" ' +
+      'allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+    modal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function close() {
+    modal.classList.remove('open');
+    frame.innerHTML = '';
+    document.body.style.overflow = '';
+  }
+  document.querySelectorAll('.watch-btn, .yt-center').forEach(function (btn) {
+    btn.addEventListener('click', function () { open(btn.dataset.video); });
+  });
+  modal.addEventListener('click', function (e) {
+    if (e.target === modal || e.target.classList.contains('mclose')) close();
+  });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
+})();
+
 (function () {
   var track = document.getElementById('rvTrack');
   if (!track) return;
